@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сурхо Курумов](https://up.htmlacademy.ru/adaptive/12/user/227974).
-* Наставник: `Неизвестно`.
+* Наставник: [Анастасия Норцова](https://htmlacademy.ru/profile/id143546).
 
 ---
 

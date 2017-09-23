@@ -5,8 +5,77 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img src="http://placehold.it/150x100" alt="Лого-мишка" width="100" height="50">
+        </a>
+        <nav class="nav">
+          <button class="nav__toggle" type="button">Открыть меню</button>
+          <ul class="nav__list stle-list">
+            <li class="stle-list__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="stle-list__item">
+              <a href="#">Вязание на заказ</a>
+            </li>
+            <li class="stle-list__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="stle-list__item">
+              <a href="#">Корзина:пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="products">
+        <h1 class="products__title">Милые штучки ручной работы для дома</h1>
+        <div class="products__categories">
+          <div class="products__interior">
+            <a href="#">Предметы интерьера</a>
+          </div>
+          <div class="products__toys">
+            <a href="#">Детские игрушки</a>
+          </div>
+        </div>
+      </section>
+      <section class="weekly-product">
+        <div class="weekly-product__wrapper">
+          <div class="weekly-product__info">
+            <header class="weekly-product__title">
+                <h2 class="weekly-product__name">Вязаные корзинки</h2>
+                <p class="weekly-product__small">Товар недели</p>
+            </header>
+            <p class="weekly-product__text">
+              Экологически чистая пряжа, ручная работа.
+              Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="weekly-product_stats">
+              <tr>
+                <td>Цвет:</td>
+                <td>&laquo;Тиффани&raquo;/Серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Высота</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+            <div class="weekly-product__order order">
+              <p class="order-price">Цена:990 руб.</p>
+              <a href="#" class="order__button button">Заказать</a>
+            </div>
+          </div>
+          <img class="weekly-product__image" src="http://placehold.it/150x100" alt="Картинка товара" wdith="216" height="315">
+        </div>
+      </section>
+    </main>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
 
   </body>
 </html>

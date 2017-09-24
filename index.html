@@ -5,8 +5,150 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <header class="page-header">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="#">
+          <img src="http://placehold.it/150x100" alt="Лого-мишка" width="100" height="50">
+        </a>
+        <nav class="nav">
+          <button class="nav__toggle" type="button">Открыть меню</button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="nav__item">
+              <a href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Поиск по сайту</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Корзина:пока пуста</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page-main">
+      <section class="products">
+        <h1 class="products__title">Милые штучки ручной работы для дома</h1>
+        <div class="products__categories">
+          <div class="products__interior">
+            <a href="#">Предметы интерьера</a>
+          </div>
+          <div class="products__toys">
+            <a href="#">Детские игрушки</a>
+          </div>
+        </div>
+      </section>
+      <section class="weekly-product">
+        <div class="weekly-product__wrapper">
+          <div class="weekly-product__info">
+            <header class="weekly-product__title">
+                <h2 class="weekly-product__name">Вязаные корзинки</h2>
+                <p class="weekly-product__legend">Товар недели</p>
+            </header>
+            <p class="weekly-product__text">
+              Экологически чистая пряжа, ручная работа.
+              Доступны в шести расцветках, и трех размерах.
+            </p>
+            <table class="weekly-product_stats">
+              <tr>
+                <td>Цвет:</td>
+                <td>&laquo;Тиффани&raquo;/Серый</td>
+              </tr>
+              <tr>
+                <td>Диаметр</td>
+                <td>25 см</td>
+              </tr>
+              <tr>
+                <td>Высота</td>
+                <td>15 см</td>
+              </tr>
+            </table>
+            <div class="weekly-product__order order">
+              <p class="order-price">Цена:990 руб.</p>
+              <a href="#" class="order__button button">Заказать</a>
+            </div>
+          </div>
+          <img class="weekly-product__image" src="http://placehold.it/150x100" alt="Картинка товара" wdith="216" height="315">
+        </div>
+      </section>
+      <section class="about">
+        <h3 class="about__title">Коротко о нас:</h3>
+        <ul class="about__list">
+          <li class="about__item about__item--clean">Экологически чистые материалы</li>
+          <li class="about__item about__item--cheap">Скандинавский стиль по российской цене</li>
+          <li class="about__item about__item--popular">Увеличивает лайки на фотографиях</li>
+          <li class="about__item about__item--cute">Связано вручную с любовью и умилением</li>
+          <li class="about__item about__item--patriotic">Поддержка отечественного производителя</li>
+          <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="comments">
+        <div class="comments__wrapper">
+          <h3 class="comments__title">Отзывы</h3>
+          <div class="comments__list">
+            <blockquote class="comments__item">
+              <p>Я молодая мама, но всё равно фотографии не набирали и близко такого
+                количества лайков, как у популярных инстамамочек. В отчаянии, я накупила
+                аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более
+                стильными, а также набирают больше лайков!</p>
+              <cite class="comments__author">Анастасия Красильникова</cite>
+              <p class="comments__author-contact">@misssssiskras</p>
+            </blockquote>
+          </div>
+          <div class="comments__actions">
+            <button class="comments__left" type="button">Предыдущий</button>
+            <button class="comments__right" type="button">Следующий</button>
+          </div>
+          <a href="#" class="comments__button button">Написать</a>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__text">
+          <div class="contacts__wrapper">
+            <h3 class="contacts__title">Контакты</h3>
+              <div class="contacts__email">
+                <p>email:</p>
+                <a href="#">nfo@mimimishkashop.ru</a>
+              </div>
+              <div class="contacts__adress">
+                <p>адрес:</p>
+                <p>г. Санкт-Петербург,
+                    ул. Большая Конюшенная,
+                    д. 19/8, офис 101</p>
+              </div>
+          </div>
+        </div>
+        <div class="contacts__map">
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+        </div>
+        <a href="#" class="contacts__button button">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="social">
+          <a href="#" class="social__item social__item--instagram">Instagram</a>
+          <a href="#" class="social__item social__item--facebook">Facebook</a>
+          <a href="#" class="social__item social__item--twitter">Twitter</a>
+        </div>
+        <div class="credits">
+          <h3 class="credits__title">Разработано</h3>
+          <a href="#" class="credits__link">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-cart">
+      <h2 class="modal-cart__title">Добавить в корзину</h2>
+      <p class="modal-cart__action-call">Добавить в корзину</p>
+      <div class="modal-cart__sizes choose-size">
+        <a href="#" class="choose-size__item">S</a>
+        <a href="#" class="choose-size__item">M</a>
+        <a href="#" class="choose-size__item">L</a>
+      </div>
+      <button class="modal-cart__button modal-cart__button--green button" type="button">Добавить</button>
+    </div>
   </body>
 </html>

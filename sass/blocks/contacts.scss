@@ -1,0 +1,58 @@
+.contacts {
+  padding-bottom: 38px;
+
+  &__title {
+    @include mobile-secondary-title;
+    margin-bottom: 38px;
+    font-size: 18px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 320px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  &__email {
+    display: flex;
+    margin-bottom: 38px;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  &__adress {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  &__legend {
+    margin: 0;
+    width: 60px;
+  }
+
+  &__email-data {
+    color: $text-color;
+    text-decoration: none;
+    border-bottom: 1px solid $main-color;
+  }
+
+  &__adress-data {
+    width: 150px;
+    margin: 0;
+  }
+
+  &__map {
+    width: 320px;
+    margin: 0 auto;
+  }
+}

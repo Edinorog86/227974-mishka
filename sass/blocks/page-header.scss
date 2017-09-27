@@ -1,18 +1,17 @@
 
 .page-header {
-  border-bottom:1px solid #ececec;
-  font-family:"Open-Sans", "Tahoma", "sans-serif";
-  font-weight:bold;
+  border-bottom: 1px solid #ececec;
+  font-weight: bold;
 
   &__wrapper {
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    width:320px;
-    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    margin: 0 auto;
   }
+
   &__logo {
-    padding:0 30px;
-    padding:22px 0;
+    padding: 22px 30px;
   }
 }

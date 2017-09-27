@@ -1,49 +1,61 @@
 body,
 html {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
-@mixin list-style-reset{
-  margin:0;
-  padding:0;
-  list-style-type:none;
+
+$main-color: #63d1bb;
+$text-color: #444444;
+
+@mixin list-style-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
+
 @mixin pseudo-element($width, $heigth, $top, $left) {
-  content:"";
-  position:absolute;
-  width:$width;
-  height:$heigth;
-  top:$top;
-  left:$left;
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $heigth;
+  top: $top;
+  left: $left;
 }
+
 @mixin mobile-secondary-title {
-  margin:0;
-  font-size:25px;
-  line-height:30px;
-  font-weight:bold;
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
 }
+
 body {
-  font-family:"Open-Sans", "Tahoma", "sans-serif";
+  font-family: "Open-Sans", "Tahoma", sans-serif;
 }
+
 @font-face {
-  font-family: 'Open-Sans';
-  src: url('../fonts/opensans.woff2') format('woff2'),
-       url('../fonts/opensans.woff') format('woff');
+  font-family: "Open-Sans";
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
-  font-family: 'Open-Sans';
-  src: url('../fonts/opensansbold.woff2') format('woff2'),
-       url('../fonts/opensansbold.woff') format('woff');
+  font-family: "Open-Sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
 }
 
-@import 'blocks/page-header.scss';
-@import 'blocks/nav.scss';
-@import 'blocks/products.scss';
-@import 'blocks/weekly-product.scss';
-@import 'blocks/button.scss';
-@import 'blocks/about.scss';
-@import 'blocks/comments.scss';
+@import "blocks/page-header.scss";
+@import "blocks/nav.scss";
+@import "blocks/products.scss";
+@import "blocks/weekly-product.scss";
+@import "blocks/button.scss";
+@import "blocks/about.scss";
+@import "blocks/comments.scss";
+@import "blocks/contacts.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+@import "blocks/credits.scss";
+@import "blocks/modal-cart.scss";

@@ -1,45 +1,58 @@
 .about {
-  box-sizing:border-box;
-  width:320px;
-  padding:0 30px;
-  margin:0 auto;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+
   &__title {
     @include mobile-secondary-title;
-    margin-bottom:33px;
+    margin-bottom: 33px;
   }
+
   &__list {
     @include list-style-reset;
-    font-size:17px;
-    line-height:20px;
-    font-weight:bold;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
   }
+
   &__item {
-    position:relative;
-    padding-top:60px;
-    margin-bottom:30px;
+    position: relative;
+    padding-top: 60px;
+    margin-bottom: 30px;
   }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
   &__item--clean::after {
     @include pseudo-element(50px, 50px, 0, 0);
-    background:url("../img/icon-feature-flower.svg") no-repeat center center;
+    background: url("../img/icon-feature-flower.svg") no-repeat center center;
   }
+
   &__item--cheap::after {
     @include pseudo-element(50px, 50px, 0, 0);
-    background:url("../img/icon-feature-money.svg") no-repeat center center;
+    background: url("../img/icon-feature-money.svg") no-repeat center center;
   }
+
   &__item--popular::after {
     @include pseudo-element(50px, 50px, 0, 0);
-    background:url("../img/icon-feature-heart.svg") no-repeat center center;
+    background: url("../img/icon-feature-heart.svg") no-repeat center center;
   }
+
   &__item--cute::after {
     @include pseudo-element(50px, 50px, 0, 0);
-    background:url("../img/icon-feature-ball.svg") no-repeat center center;
+    background: url("../img/icon-feature-ball.svg") no-repeat center center;
   }
+
   &__item--patriotic::after {
     @include pseudo-element(60px, 50px, 0, 0);
-    background:url("../img/icon-feature-rocket.svg") no-repeat center center;
+    background: url("../img/icon-feature-rocket.svg") no-repeat center center;
   }
+
   &__item--gift::after {
     @include pseudo-element(50px, 50px, 0, 0);
-    background:url("../img/icon-feature-gift.svg") no-repeat center center;
+    background: url("../img/icon-feature-gift.svg") no-repeat center center;
   }
 }

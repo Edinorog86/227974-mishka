@@ -11,10 +11,11 @@
   text-decoration: none;
   text-align: center;
   color: #444444;
+  background-color: transparent;
 
   &--green {
-    color:#ffffff;
-    background-color:$main-color;
-    border:none;
+    color: #ffffff;
+    background-color: $main-color;
+    border: none;
   }
 }

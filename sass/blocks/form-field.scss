@@ -1,0 +1,19 @@
+.form-field {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  padding-bottom: 35px;
+  margin: 0;
+
+  &__label {
+    margin-bottom: 23px;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  &__label:last-child {
+    margin-bottom: 0;
+  }
+}

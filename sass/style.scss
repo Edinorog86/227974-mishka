@@ -1,11 +1,12 @@
 body,
 html {
-  width:100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
+  font-family: "Open-Sans", "Tahoma", sans-serif;
   min-width: 320px;
 }
 
@@ -32,10 +33,6 @@ $text-color: #444444;
   font-size: 25px;
   line-height: 30px;
   font-weight: bold;
-}
-
-body {
-  font-family: "Open-Sans", "Tahoma", sans-serif;
 }
 
 @font-face {
@@ -68,3 +65,6 @@ body {
 @import "blocks/secondary-header.scss";
 @import "blocks/catalog-goods.scss";
 @import "blocks/manufacture.scss";
+@import "blocks/form.scss";
+@import "blocks/form-field.scss";
+@import "blocks/order-form.scss";

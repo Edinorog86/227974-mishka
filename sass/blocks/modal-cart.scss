@@ -7,16 +7,17 @@
   width: 320px;
   padding: 0 30px;
   padding-top: 35px;
-  padding-bottom:47px;
+  padding-bottom: 47px;
   border-top: 1px solid #c7c7c7;
   top: 50%;
   left: 50%;
-  background-color:#ffffff;
+  background-color: #ffffff;
   box-shadow: 0 10px 30px -10px #d6d6d6;
   transform: translate(-50%, -50%);
 
   &__title {
-    display:block;
+    display: block;
+
     @include mobile-secondary-title;
     width: 150px;
     text-transform: uppercase;

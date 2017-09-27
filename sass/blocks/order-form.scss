@@ -1,0 +1,106 @@
+.order-form {
+
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 27px;
+    font-size: 17px;
+    line-height: 17px;
+    font-weight: bold;
+    color: $main-color;
+  }
+
+  &__title::after {
+    content: "";
+    width: 77%;
+    height: 1px;
+    background-color: $main-color;
+  }
+
+  &__title[for="order-form__email"]::after {
+    width: 69%;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    display: none;
+  }
+
+  &__color label,
+  &__type label {
+    position: relative;
+    padding-left: 60px;
+    margin-bottom: 48px;
+  }
+
+  &__color label::after {
+    @include pseudo-element(38px, 38px, -10px ,0);
+    border: 2px solid black;
+  }
+
+  &__text-input {
+    width: 100%;
+    margin-bottom: 35px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 17px;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: normal;
+    color: $text-color;
+  }
+
+  &__text-input::placeholder {
+    opacity: 0.3;
+  }
+
+  &__text-input:hover,
+  &__text-input:focus {
+    outline: none;
+    border-bottom-color: $main-color;
+  }
+
+  &__text-input:last-child {
+    margin-bottom: 0;
+  }
+
+  legend {
+    text-transform: uppercase;
+  }
+}
+
+#order-form__additional {
+  box-sizing: border-box;
+  padding:16px 17px;
+  width: 100%;
+  min-height: 143px;
+  margin-bottom: 17px;
+  border: 2px solid #000000;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $text-color;
+  resize: none;
+}
+
+#order-form__additional::placeholder {
+  opacity: 0.3;
+}
+
+.order-form__sidetext {
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: normal;
+  color: $text-color;
+}
+
+#order-form__email,
+#order-form__phone, {
+  box-sizing: border-box;
+  padding-right: 44px;
+}

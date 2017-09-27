@@ -1,7 +1,12 @@
 body,
 html {
+  width:100%;
   margin: 0;
   padding: 0;
+}
+
+body {
+  min-width: 320px;
 }
 
 $main-color: #63d1bb;
@@ -59,3 +64,7 @@ body {
 @import "blocks/social.scss";
 @import "blocks/credits.scss";
 @import "blocks/modal-cart.scss";
+@import "blocks/choose-size.scss";
+@import "blocks/secondary-header.scss";
+@import "blocks/catalog-goods.scss";
+@import "blocks/manufacture.scss";

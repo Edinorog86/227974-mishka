@@ -11,4 +11,10 @@
   text-decoration: none;
   text-align: center;
   color: #444444;
+
+  &--green {
+    color:#ffffff;
+    background-color:$main-color;
+    border:none;
+  }
 }

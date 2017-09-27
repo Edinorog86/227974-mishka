@@ -1,0 +1,12 @@
+.secondary-header {
+    padding:74px 0;
+    background-color: #f1f1f1;
+
+  &__title {
+    display: block;
+    margin: 0 auto;
+    width: 260px;
+    font-size: 27px;
+    line-height: 30px;
+  }
+}

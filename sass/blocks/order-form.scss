@@ -25,6 +25,16 @@
     width: 69%;
   }
 
+  input[type="radio"]:checked + label::after {
+    box-shadow: 0 0 0 12px #ffffff inset,
+                0 0 0 20px $main-color inset;
+  }
+
+  input[type="checkbox"]:checked + label::after {
+    background: url("../img/icon-tick.svg") no-repeat center center;
+    background-size: 25px 25px;
+  }
+
   input[type="checkbox"],
   input[type="radio"] {
     display: none;
@@ -33,12 +43,20 @@
   &__color label,
   &__type label {
     position: relative;
+    padding: 13px 0;
     padding-left: 60px;
-    margin-bottom: 48px;
+    margin-bottom: 20px;
+    cursor: pointer;
   }
 
   &__color label::after {
-    @include pseudo-element(38px, 38px, -10px ,0);
+    @include pseudo-element(38px, 38px, 0px , 0px);
+    border: 2px solid black;
+  }
+
+  &__type label::after {
+    @include pseudo-element(40px, 40px, 0px, 0px);
+    border-radius: 50%;
     border: 2px solid black;
   }
 
@@ -103,4 +121,12 @@
 #order-form__phone, {
   box-sizing: border-box;
   padding-right: 44px;
+}
+
+#order-form__phone {
+  background: url("../img/icon-phone.svg") no-repeat right 10px bottom 10px;
+}
+
+#order-form__email {
+  background: url("../img/icon-mail.svg") no-repeat right 10px bottom 10px;
 }

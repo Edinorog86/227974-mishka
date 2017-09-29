@@ -34,6 +34,10 @@
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   &__interior {

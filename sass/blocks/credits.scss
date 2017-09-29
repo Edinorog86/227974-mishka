@@ -2,6 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:hover {
+    opacity: 0.3;
+  }
 }
 
 .credits__title {

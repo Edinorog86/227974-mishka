@@ -39,6 +39,19 @@
   font-weight: bold;
 }
 
+.catalog-goods__title a {
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .catalog-goods__params {
   margin: 0;
   padding-bottom: 22px;

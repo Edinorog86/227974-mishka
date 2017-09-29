@@ -49,5 +49,16 @@
     @include pseudo-element(102px, 76px, 50%, 50%);
     transform: translate(-50%, -50%);
     background: url("../img/icon-play.svg") no-repeat center center;
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+  }
+
+  &:hover::after {
+    transform: translate(-50%, -50%) scale(1.2);
+  }
+
+  &:active::after {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.3;
   }
 }

@@ -53,6 +53,16 @@
   border: 2px solid black;
 }
 
+.order-form__color label:hover::after,
+.order-form__type label:hover::after {
+  border-color: $main-color;
+}
+
+.order-form__color label:active::after,
+.order-form__type label:active::after {
+  border-color: #c7c7c7;
+}
+
 .order-form__type label::after {
   @include pseudo-element(40px, 40px, 0, 0);
   border-radius: 50%;
@@ -101,9 +111,18 @@
   font-weight: normal;
   color: $text-color;
   resize: none;
+  outline: none;
+
+  &:hover {
+    border-color: $main-color;
+  }
 
   &::placeholder {
     opacity: 0.3;
+  }
+
+  &:focus {
+    border-color: $main-color;
   }
 }
 

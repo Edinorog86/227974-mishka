@@ -20,6 +20,14 @@
     background-color: $text-color;
   }
 
+  &:active {
+    color: #8d8d8d;
+  }
+
+  a:active {
+    color: #8d8d8d;
+  }
+
   &--green {
     color: #ffffff;
     background-color: $main-color;

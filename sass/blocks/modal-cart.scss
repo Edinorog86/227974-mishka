@@ -18,6 +18,7 @@
 
 .modal-cart__title {
   display: block;
+
   @include mobile-secondary-title;
   width: 150px;
   text-transform: uppercase;
@@ -30,4 +31,3 @@
 .modal-cart__sizes {
   margin-bottom: 31px;
 }
-

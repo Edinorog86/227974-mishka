@@ -26,8 +26,7 @@
 }
 
 .order-form input[type="radio"]:checked + label::after {
-  box-shadow: 0 0 0 12px #ffffff inset,
-              0 0 0 20px $main-color inset;
+  box-shadow: 0 0 0 12px #ffffff inset, 0 0 0 20px $main-color inset;
 }
 
 .order-form input[type="checkbox"]:checked + label::after {
@@ -92,7 +91,7 @@
 
 .order-form__additional {
   box-sizing: border-box;
-  padding:16px 17px;
+  padding: 16px 17px;
   width: 100%;
   min-height: 143px;
   margin-bottom: 17px;

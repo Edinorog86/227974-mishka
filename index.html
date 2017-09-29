@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="veiwport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
+      <div class="page-header__wrapper container">
         <a class="page-header__logo" href="#">
           <img src="img/logo-mobile.svg" alt="Лого-мишка" width="100" height="50">
         </a>
@@ -32,7 +33,7 @@
     </header>
     <main class="page-main">
       <section class="products">
-        <div class="products__wrapper">
+        <div class="products__wrapper container">
           <h1 class="products__title">Милые штучки ручной работы для дома</h1>
           <div class="products__categories">
             <div class="products__interior">
@@ -45,7 +46,7 @@
         </div>
       </section>
       <section class="weekly-product">
-        <div class="weekly-product__wrapper">
+        <div class="weekly-product__wrapper container">
           <div class="weekly-product__info">
             <header class="weekly-product__title">
                 <h2 class="weekly-product__name">Вязаные корзинки</h2>
@@ -78,18 +79,20 @@
         </div>
       </section>
       <section class="about">
-        <h3 class="about__title">Коротко о нас:</h3>
-        <ul class="about__list">
-          <li class="about__item about__item--clean">Экологически чистые материалы</li>
-          <li class="about__item about__item--cheap">Скандинавский стиль по российской цене</li>
-          <li class="about__item about__item--popular">Увеличивает лайки на фотографиях</li>
-          <li class="about__item about__item--cute">Связано вручную с любовью и умилением</li>
-          <li class="about__item about__item--patriotic">Поддержка отечественного производителя</li>
-          <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
-        </ul>
+        <div class="container-padded">
+          <h3 class="about__title">Коротко о нас:</h3>
+          <ul class="about__list">
+            <li class="about__item about__item--clean">Экологически чистые материалы</li>
+            <li class="about__item about__item--cheap">Скандинавский стиль по российской цене</li>
+            <li class="about__item about__item--popular">Увеличивает лайки на фотографиях</li>
+            <li class="about__item about__item--cute">Связано вручную с любовью и умилением</li>
+            <li class="about__item about__item--patriotic">Поддержка отечественного производителя</li>
+            <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
+          </ul>
+        </div>
       </section>
       <section class="comments">
-        <div class="comments__wrapper">
+        <div class="comments__wrapper container-padded">
           <h3 class="comments__title">Отзывы</h3>
           <div class="comments__list">
             <blockquote class="comments__item">
@@ -110,7 +113,7 @@
       </section>
       <section class="contacts">
         <div class="contacts__text">
-          <div class="contacts__wrapper">
+          <div class="contacts__wrapper container-padded">
             <h3 class="contacts__title">Контакты</h3>
               <div class="contacts__email">
                 <p class="contacts__legend">email:</p>
@@ -127,7 +130,7 @@
           <div class="contacts__map">
             <img src="../img/map-mobile@1x.jpg" alt="карта" width="320" height="457">
           </div>
-          <div class="contacts__wrapper">
+          <div class="container-padded">
             <a href="#" class="contacts__button button">Напишите нам</a>
           </div>
         </div>

@@ -1,0 +1,21 @@
+@mixin list-style-reset {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin pseudo-element($width, $heigth, $top, $left) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $heigth;
+  top: $top;
+  left: $left;
+}
+
+@mixin mobile-secondary-title {
+  margin: 0;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}

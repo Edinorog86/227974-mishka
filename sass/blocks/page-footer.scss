@@ -1,11 +1,12 @@
 .page-footer {
   padding: 23px 0;
   background-color: #f1f1f1;
-
-  &__wrapper {
-    box-sizing: border-box;
-    width: 320px;
-    padding: 0 30px;
-    margin: 0 auto;
-  }
 }
+
+.page-footer__wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+

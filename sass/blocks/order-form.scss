@@ -1,97 +1,96 @@
 .order-form {
-
   display: flex;
   flex-direction: column;
+}
 
-  &__title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 27px;
-    font-size: 17px;
-    line-height: 17px;
-    font-weight: bold;
-    color: $main-color;
-  }
+.order-form__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 27px;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: bold;
+  color: $main-color;
 
-  &__title::after {
+  &::after {
     content: "";
     width: 77%;
     height: 1px;
     background-color: $main-color;
   }
 
-  &__title[for="order-form__email"]::after {
+  &[for="order-form__email"]::after {
     width: 69%;
   }
+}
 
-  input[type="radio"]:checked + label::after {
-    box-shadow: 0 0 0 12px #ffffff inset,
-                0 0 0 20px $main-color inset;
-  }
+.order-form input[type="radio"]:checked + label::after {
+  box-shadow: 0 0 0 12px #ffffff inset,
+              0 0 0 20px $main-color inset;
+}
 
-  input[type="checkbox"]:checked + label::after {
-    background: url("../img/icon-tick.svg") no-repeat center center;
-    background-size: 25px 25px;
-  }
+.order-form input[type="checkbox"]:checked + label::after {
+  background: url("../img/icon-tick.svg") no-repeat center center;
+  background-size: 25px 25px;
+}
 
-  input[type="checkbox"],
-  input[type="radio"] {
-    display: none;
-  }
+.order-form input[type="checkbox"],
+.order-form input[type="radio"] {
+  display: none;
+}
 
-  &__color label,
-  &__type label {
-    position: relative;
-    padding: 13px 0;
-    padding-left: 60px;
-    margin-bottom: 20px;
-    cursor: pointer;
-  }
+.order-form__color label,
+.order-form__type label {
+  position: relative;
+  padding: 13px 0;
+  padding-left: 60px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
 
-  &__color label::after {
-    @include pseudo-element(38px, 38px, 0px , 0px);
-    border: 2px solid black;
-  }
+.order-form__color label::after {
+  @include pseudo-element(38px, 38px, 0, 0);
+  border: 2px solid black;
+}
 
-  &__type label::after {
-    @include pseudo-element(40px, 40px, 0px, 0px);
-    border-radius: 50%;
-    border: 2px solid black;
-  }
+.order-form__type label::after {
+  @include pseudo-element(40px, 40px, 0, 0);
+  border-radius: 50%;
+  border: 2px solid black;
+}
 
-  &__text-input {
-    width: 100%;
-    margin-bottom: 35px;
-    border: none;
-    border-bottom: 2px solid #000000;
-    padding-bottom: 17px;
-    font-size: 17px;
-    line-height: 18px;
-    font-weight: normal;
-    color: $text-color;
-  }
+.order-form__text-input {
+  width: 100%;
+  margin-bottom: 35px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  padding-bottom: 17px;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $text-color;
 
-  &__text-input::placeholder {
+  &::placeholder {
     opacity: 0.3;
   }
 
-  &__text-input:hover,
-  &__text-input:focus {
+  &:hover,
+  &:focus {
     outline: none;
     border-bottom-color: $main-color;
   }
 
-  &__text-input:last-child {
+  &:last-child {
     margin-bottom: 0;
-  }
-
-  legend {
-    text-transform: uppercase;
   }
 }
 
-#order-form__additional {
+.order-form legend {
+  text-transform: uppercase;
+}
+
+.order-form__additional {
   box-sizing: border-box;
   padding:16px 17px;
   width: 100%;
@@ -103,10 +102,10 @@
   font-weight: normal;
   color: $text-color;
   resize: none;
-}
 
-#order-form__additional::placeholder {
-  opacity: 0.3;
+  &::placeholder {
+    opacity: 0.3;
+  }
 }
 
 .order-form__sidetext {
@@ -117,16 +116,16 @@
   color: $text-color;
 }
 
-#order-form__email,
-#order-form__phone, {
+.order-form__email,
+.order-form__phone, {
   box-sizing: border-box;
   padding-right: 44px;
 }
 
-#order-form__phone {
+.order-form__phone {
   background: url("../img/icon-phone.svg") no-repeat right 10px bottom 10px;
 }
 
-#order-form__email {
+.order-form__email {
   background: url("../img/icon-mail.svg") no-repeat right 10px bottom 10px;
 }

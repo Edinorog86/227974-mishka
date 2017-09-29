@@ -14,20 +14,20 @@
   background-color: #ffffff;
   box-shadow: 0 10px 30px -10px #d6d6d6;
   transform: translate(-50%, -50%);
-
-  &__title {
-    display: block;
-
-    @include mobile-secondary-title;
-    width: 150px;
-    text-transform: uppercase;
-  }
-
-  &__action-call {
-    width: 150px;
-  }
-
-  &__sizes {
-    margin-bottom: 31px;
-  }
 }
+
+.modal-cart__title {
+  display: block;
+  @include mobile-secondary-title;
+  width: 150px;
+  text-transform: uppercase;
+}
+
+.modal-cart__action-call {
+  width: 150px;
+}
+
+.modal-cart__sizes {
+  margin-bottom: 31px;
+}
+

@@ -46,7 +46,7 @@
 .nav__toggle {
   position: absolute;
   padding: 0;
-  top: -50px;
+  top: -51px;
   right: 30px;
   width: 20px;
   height: 2px;
@@ -54,18 +54,28 @@
   border: none;
   background-color: #000000;
 
-  &::after,
-  &::before {
-    content: "";
-    position: absolute;
-    top: 4px;
-    left: 0;
-    width: 20px;
-    height: 2px;
+  &--open::after,
+  &--open::before {
+    @include pseudo-element(20px, 2px, 4px, 0);
     background-color: #000000;
   }
 
-  &::before {
+  &--open::before {
     top: -4px;
+  }
+
+  &--close {
+    background-color: transparent;
+  }
+
+  &--close::after,
+  &--close::before, {
+    @include pseudo-element(20px, 2px, 0, 0);
+    background-color: #000000;
+    transform: rotate(45deg);
+  }
+
+  &--close::before {
+    transform: rotate(-45deg);
   }
 }

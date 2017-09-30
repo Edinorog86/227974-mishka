@@ -23,11 +23,10 @@
 }
 
 .products a {
+  width: 100%;
   box-sizing: border-box;
   display: block;
-  width: 100%;
   padding: 28px 30px;
-  padding-right: 160px;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
@@ -39,12 +38,17 @@
   }
 }
 
+.products p {
+  margin: 0;
+  width: 130px;
+}
+
 .products__interior {
   position: relative;
   background: #63d1bb;
 
   &::after {
-    @include pseudo-element(62px, 70px, 18px, 230px);
+    @include pseudo-element-right(62px, 70px, 23px, 32px);
     background: url("../img/icon-interior.svg") no-repeat center center;
     opacity: 0.5;
   }
@@ -55,7 +59,7 @@
   background: #56c3b2;
 
   &::after {
-    @include pseudo-element(62px, 70px, 18px, 230px);
+    @include pseudo-element-right(62px, 70px, 23px,32px);
     background: url("../img/icon-toy.svg") no-repeat center center;
     opacity: 0.5;
   }

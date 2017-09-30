@@ -1,0 +1,23 @@
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+  font-weight: bold;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-header__logo {
+  padding: 22px 30px;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

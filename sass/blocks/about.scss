@@ -1,0 +1,56 @@
+.about {
+  box-sizing: border-box;
+  padding: 0 30px;
+}
+
+.about__title {
+  @include mobile-secondary-title;
+  margin-bottom: 33px;
+}
+
+.about__list {
+  @include list-style-reset;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.about__item {
+  position: relative;
+  padding-top: 60px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--clean::after {
+    @include pseudo-element(50px, 50px, 0, 0);
+    background: url("../img/icon-feature-flower.svg") no-repeat center center;
+  }
+
+  &--cheap::after {
+    @include pseudo-element(50px, 50px, 0, 0);
+    background: url("../img/icon-feature-money.svg") no-repeat center center;
+  }
+
+  &--popular::after {
+    @include pseudo-element(50px, 50px, 0, 0);
+    background: url("../img/icon-feature-heart.svg") no-repeat center center;
+  }
+
+  &--cute::after {
+    @include pseudo-element(50px, 50px, 0, 0);
+    background: url("../img/icon-feature-ball.svg") no-repeat center center;
+  }
+
+  &--patriotic::after {
+    @include pseudo-element(60px, 50px, 0, 0);
+    background: url("../img/icon-feature-rocket.svg") no-repeat center center;
+  }
+
+  &--gift::after {
+    @include pseudo-element(50px, 50px, 0, 0);
+    background: url("../img/icon-feature-gift.svg") no-repeat center center;
+  }
+}

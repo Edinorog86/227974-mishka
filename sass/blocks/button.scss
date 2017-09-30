@@ -1,0 +1,36 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 17px 0;
+  border: 2px solid #444444;
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #444444;
+  background-color: transparent;
+  transition: all 0.1s linear;
+  cursor: pointer;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $text-color;
+  }
+
+  &:active {
+    color: #8d8d8d;
+  }
+
+  a:active {
+    color: #8d8d8d;
+  }
+
+  &--green {
+    color: #ffffff;
+    background-color: $main-color;
+    border: none;
+  }
+}

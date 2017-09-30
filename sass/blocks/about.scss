@@ -20,6 +20,30 @@
     margin-bottom: 0;
   }
 
+  &--clean p {
+    width: 190px;
+  }
+
+  &--cheap p {
+    width: 200px;
+  }
+
+  &--popular p {
+    width: 190px;
+  }
+
+  &--cute p {
+    width: 210px;
+  }
+
+  &--patriotic p {
+    width: 250px;
+  }
+
+  &--gift p {
+    width: 200px;
+  }
+
   &--clean::after {
     @include pseudo-element(50px, 50px, 0, 0);
     background: url("../img/icon-feature-flower.svg") no-repeat center center;
@@ -48,5 +72,60 @@
   &--gift::after {
     @include pseudo-element(50px, 50px, 0, 0);
     background: url("../img/icon-feature-gift.svg") no-repeat center center;
+  }
+}
+
+@media(min-width: 768px) {
+
+  .about__list {
+    display: flex;
+    align-items:flex-start;
+    flex-wrap: wrap;
+  }
+
+  .about__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .about__item {
+    flex-basis: 334px;
+
+    &--clean {
+      order: 0;
+    }
+
+    &--cheap {
+      order: 2;
+    }
+
+    &--popular {
+      order: 4;
+    }
+
+    &--cute {
+      order: 1;
+    }
+
+    &--patriotic {
+      order: 3;
+    }
+
+    &--gift {
+      order: 5;
+    }
+  }
+}
+
+@media(min-width: 1250px) {
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+    margin-left: 175px;
+  }
+
+  .about__list {
+    margin-left: 175px;
   }
 }

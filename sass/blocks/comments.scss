@@ -42,6 +42,7 @@
 .comments__right {
   width: 50%;
   min-height: 50px;
+  width: 128px;
   font-size: 0;
   background-color: transparent;
   border: 1px solid #ececec;
@@ -63,4 +64,51 @@
 
 .comments__right {
   background: url("../img/icon-right-arrow.svg") no-repeat center center;
+}
+
+@media(min-width: 768px) {
+
+  .comments__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:  center;
+    align-content: flex-start;
+    justify-content: space-between;
+  }
+
+  .comments__title {
+    order: 1;
+  }
+
+  .comments__button {
+    width: 175px;
+    order: 2;
+  }
+
+  .comments__list {
+    order: 3;
+    margin-top: 30px;
+  }
+
+  .comments__actions {
+    order: 4;
+    margin-left: auto;
+    margin-top: -100px;
+  }
+
+  .comments__left,
+  .comments__right {
+    width: 83px;
+    border: none;
+  }
+
+}
+
+@media(min-width: 1250px) {
+  .comments__title{
+    padding-left:  175px;
+  }
+  .comments__list {
+    padding-left:  175px;
+  }
 }

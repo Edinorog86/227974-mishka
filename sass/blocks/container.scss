@@ -2,3 +2,21 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@media(min-width: 768px) {
+  .container {
+    box-sizing: border-box;
+    width: 768px;
+    padding: 0 50px;
+    margin: 0 auto;
+  }
+}
+
+@media(min-width: 1200px) {
+  .container {
+    box-sizing: border-box;
+    width: 1250px;
+    padding: 0 100px;
+    margin: 0 auto;
+  }
+}

@@ -12,23 +12,38 @@
         <a class="page-header__logo" href="#">
           <img src="img/logo-mobile.svg" alt="Лого-мишка" width="100" height="50">
         </a>
-        <nav class="nav">
+        <div class="page-header__menu nav">
           <button class="nav__toggle nav__toggle--open" type="button">Открыть меню</button>
           <ul class="nav__list">
-            <li class="nav__item">
+            <li class="page-header__item nav__item">
               <a href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="nav__item">
+            <li class="page-header__item nav__item">
               <a href="form.html">Вязание на заказ</a>
             </li>
-            <li class="nav__item nav__item--search">
+          </ul>
+        </div>
+        <div class="page-header__user-area nav">
+          <ul class="nav__list">
+            <li class="page-header__item nav__item nav__item--search">
               <a href="#">Поиск по сайту</a>
             </li>
-            <li class="nav__item nav__item--cart">
+            <li class="page-header__item nav__item nav__item--cart">
               <a href="#">Корзина:пока пуста</a>
             </li>
           </ul>
-        </nav>
+        </div>
+        <div class="page-header__offers nav">
+          <ul class="nav__list">
+            <li class="page-header__item nav__item">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="page-header__item nav__item">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+        </div>
+        <p class="page-header__delivery-info">Бесплатная доставка по России</p>
       </div>
     </header>
     <main class="page-main">
@@ -46,7 +61,7 @@
         </div>
       </section>
       <section class="weekly-product">
-        <div class="weekly-product__wrapper container">
+        <div class="weekly-product__wrapper container-padded">
           <div class="weekly-product__info">
             <header class="weekly-product__title">
                 <h2 class="weekly-product__name">Вязаные корзинки</h2>

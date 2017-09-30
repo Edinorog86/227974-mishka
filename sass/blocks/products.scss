@@ -60,3 +60,30 @@
     opacity: 0.5;
   }
 }
+
+@media(min-width: 768px) {
+
+  .products__wrapper {
+    padding-top: 165px;
+    background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat center center;
+    background-size: 100%;
+  }
+
+  .products__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 350px;
+  }
+
+  .products__categories {
+    flex-direction: row;
+  }
+}
+
+@media(min-width: 1200px) {
+  .products__title {
+    padding: 0 150px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

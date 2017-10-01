@@ -1,7 +1,11 @@
 .credits {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 0;
+  text-align: center;
+
+  * {
+    display: inline-block;
+    vertical-align: middle;
+  }
 
   &:hover {
     opacity: 0.3;
@@ -9,7 +13,8 @@
 }
 
 .credits__title {
-  margin-right: 26px;
+  margin:0;
+  margin-right: 25px;
   font-size: 19px;
   line-height: 19px;
   font-weight: bold;
@@ -17,7 +22,7 @@
 
 .credits__link {
   font-size: 0;
-  width: 44px;
-  height: 44px;
+  width: 29px;
+  height: 36px;
   background: url("../img/htmlacademy.svg") no-repeat center center;
 }

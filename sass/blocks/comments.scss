@@ -1,4 +1,4 @@
-.comments {
+.comments__wrapper {
   padding-top: 65px;
   padding-bottom: 50px;
 }
@@ -74,6 +74,7 @@
     align-items:  center;
     align-content: flex-start;
     justify-content: space-between;
+    background: url("../img/review@1x.jpg") no-repeat 0% center;
   }
 
   .comments__title {
@@ -105,10 +106,17 @@
 }
 
 @media(min-width: 1250px) {
+
+  .comments__wrapper {
+    background-position: 100px center;
+  }
+
   .comments__title{
     padding-left:  175px;
   }
+
   .comments__list {
     padding-left:  175px;
   }
+
 }

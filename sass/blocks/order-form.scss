@@ -25,6 +25,11 @@
   }
 }
 
+.order-form__inputs {
+  display: flex;
+  flex-direction: column;
+}
+
 .order-form input[type="radio"]:checked + label::after {
   box-shadow: 0 0 0 12px #ffffff inset, 0 0 0 20px $main-color inset;
 }
@@ -127,6 +132,7 @@
 }
 
 .order-form__sidetext {
+  display: block;
   margin-bottom: 32px;
   font-size: 14px;
   line-height: 16px;
@@ -146,4 +152,155 @@
 
 .order-form__email {
   background: url("../img/icon-mail.svg") no-repeat right 10px bottom 10px;
+}
+
+.order-form__contacts,
+.order-form__wishes {
+
+  .order-form__wrapper {
+    margin-top: 30px;
+  }
+
+}
+
+.order-form__submut {
+  width: 100%;
+}
+
+@media(min-width: 768px) {
+
+  .order-form__title {
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .order-form__title {
+    width: 167px;
+  }
+
+  .order-form__inputs {
+    width: 505px;
+  }
+
+  .order-form__wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .order-form__color {
+    padding: 48px 0;
+    background-color: #f1f1f1;
+  }
+
+  .order-form__color {
+
+    .order-form__inputs {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    label {
+      box-sizing: border-box;
+      flex-basis: 50%;
+    }
+  }
+
+  .form__intro-text {
+    font-size: 17px;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .order-form__bio {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+
+  .order-form__contacts {
+    padding-top: 59px;
+    padding-bottom: 48px;
+    background-color: #f1f1f1;
+
+    input {
+      width: 501px;
+    }
+
+    .order-form__wrapper {
+      margin-bottom: 33px;
+    }
+  }
+
+  .order-form__additional {
+    width: 501px;
+  }
+
+  .order-form__wishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 51px;
+
+    .order-form__wrapper {
+      margin-bottom: 30px;
+    }
+
+  }
+
+  .order-form__sidetext {
+    margin-bottom: 0;
+    order: 1;
+  }
+
+  .order-form__submut {
+    width: 231px;
+  }
+}
+
+@media(min-width: 1250px) {
+
+  .order-form__inputs,
+  .order-form__additional {
+    width: 700px;
+  }
+
+  .order-form__color {
+
+    .order-form__inputs {
+      width: 875px;
+    }
+
+    label {
+      flex-basis: 29%;
+    }
+
+  }
+
+  .order-form__contacts {
+
+    input {
+      width: 700px;
+    }
+
+  }
+
+  .order-form__title {
+    width: 175px;
+  }
+
+  .order-form__title legend {
+    margin: 0 auto;
+  }
+
+  .order-form__submut {
+    margin-left: 175px;
+  }
+
+  .order-form__sidetext {
+    margin-right: 175px;
+  }
+
 }

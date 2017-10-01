@@ -4,6 +4,10 @@
   font-weight: bold;
 }
 
+.page-header .container {
+  padding: 0 0;
+}
+
 .page-header__wrapper {
   position: relative;
   display: flex;
@@ -53,6 +57,11 @@
 }
 
 @media(min-width: 768px) {
+
+  .page-header .container {
+    padding: 0 50px;
+  }
+
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -102,8 +111,12 @@
   }
 }
 
-
 @media(min-width: 1250px) {
+
+  .page-header .container {
+    padding: 0 100px;
+  }
+
   .page-header__wrapper {
     flex-direction: row;
     justify-content: space-between;

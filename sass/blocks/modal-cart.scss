@@ -1,5 +1,5 @@
 .modal-cart {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   position: fixed;
@@ -14,6 +14,7 @@
   background-color: #ffffff;
   box-shadow: 0 10px 30px -10px #d6d6d6;
   transform: translate(-50%, -50%);
+  z-index: 100;
 }
 
 .modal-cart__title {

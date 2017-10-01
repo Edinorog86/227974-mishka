@@ -21,12 +21,12 @@
     margin-top: 20px;
   }
 }
-.form-field__label:first-of-type input{
+
+.form-field__label:first-of-type input {
   margin-top: 0;
 }
 
-@media(min-width: 758px) {
-
+@media (min-width: 758px) {
   .form-field__label {
     display: flex;
     align-items: center;
@@ -35,7 +35,4 @@
       margin-left: 25px;
     }
   }
-
 }
-
-

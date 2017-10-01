@@ -75,11 +75,10 @@
   }
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .about__list {
     display: flex;
-    align-items:flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 
@@ -117,8 +116,7 @@
   }
 }
 
-@media(min-width: 1250px) {
-
+@media (min-width: 1250px) {
   .about__title {
     font-size: 53px;
     line-height: 57px;

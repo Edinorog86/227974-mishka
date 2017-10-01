@@ -68,12 +68,11 @@
   background-size: cover;
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .manufacture__title {
     position: relative;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     font-size: 20px;
     line-height: 24px;
     width: 400px;
@@ -95,8 +94,7 @@
   }
 }
 
-@media(min-width: 1250px) {
-
+@media (min-width: 1250px) {
   .manufacture__wrapper {
     flex-direction: row;
     justify-content: space-between;
@@ -115,9 +113,8 @@
     padding-left: 0;
 
     &::after {
-      top:25px;
+      top: 25px;
     }
-
   }
 
   .manufacture__text-content {

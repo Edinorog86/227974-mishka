@@ -156,28 +156,22 @@
 
 .order-form__contacts,
 .order-form__wishes {
-
   .order-form__wrapper {
     margin-top: 30px;
   }
-
 }
 
 .order-form__submut {
   width: 100%;
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .order-form__title {
+    width: 167px;
 
     &::after {
       display: none;
     }
-  }
-
-  .order-form__title {
-    width: 167px;
   }
 
   .order-form__inputs {
@@ -193,15 +187,13 @@
   .order-form__color {
     padding: 48px 0;
     background-color: #f1f1f1;
-  }
-
-  .order-form__color {
 
     .order-form__inputs {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
     }
+
     label {
       box-sizing: border-box;
       flex-basis: 50%;
@@ -247,7 +239,6 @@
     .order-form__wrapper {
       margin-bottom: 30px;
     }
-
   }
 
   .order-form__sidetext {
@@ -260,15 +251,13 @@
   }
 }
 
-@media(min-width: 1250px) {
-
+@media (min-width: 1250px) {
   .order-form__inputs,
   .order-form__additional {
     width: 700px;
   }
 
   .order-form__color {
-
     .order-form__inputs {
       width: 875px;
     }
@@ -276,15 +265,12 @@
     label {
       flex-basis: 29%;
     }
-
   }
 
   .order-form__contacts {
-
     input {
       width: 700px;
     }
-
   }
 
   .order-form__title {
@@ -302,5 +288,4 @@
   .order-form__sidetext {
     margin-right: 175px;
   }
-
 }

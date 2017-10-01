@@ -68,19 +68,19 @@
   }
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .nav {
     width: auto;
   }
 
   .nav__item {
     padding: 0;
+    border-bottom: none;
 
     &--search {
       width: 85px;
       border-left: 1px solid #ececec;
-      border-right: 1px solid #ececec;;
+      border-right: 1px solid #ececec;
     }
 
     &--search a {
@@ -94,6 +94,10 @@
       width: 265px;
       padding-left: 85px;
     }
+
+    &:first-of-type {
+      border-top: none;
+    }
   }
 
   .nav a {
@@ -104,17 +108,8 @@
     display: none;
   }
 
-  .nav__item {
-    border-bottom: none;
-
-    &:first-of-type {
-      border-top: none;
-    }
-  }
-
   .nav__list {
     display: flex;
     flex-direction: row;
   }
 }
-

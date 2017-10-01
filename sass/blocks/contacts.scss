@@ -24,6 +24,7 @@
 .contacts__map {
   width: 320px;
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .contacts__email {
@@ -67,16 +68,11 @@
   margin: 0;
 }
 
-.contacts__map {
-  margin-bottom: 40px;
-}
-
 .contacts__text {
   margin-bottom: 43px;
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .contacts {
     padding-top: 70px;
   }
@@ -106,6 +102,7 @@
     .contacts__title {
       width: 100%;
     }
+
     .contacts__email,
     .contacts__adress {
       width: 334px;
@@ -123,8 +120,7 @@
 }
 
 
-@media(min-width: 1250px) {
-
+@media (min-width: 1250px) {
   .contacts__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -154,10 +150,8 @@
     width: auto;
   }
 
-
   .contacts__map {
     width: 525px;
     margin: 0;
   }
-
 }

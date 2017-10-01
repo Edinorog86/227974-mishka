@@ -40,7 +40,6 @@
 
 .comments__left,
 .comments__right {
-  width: 50%;
   min-height: 50px;
   width: 128px;
   font-size: 0;
@@ -66,12 +65,11 @@
   background: url("../img/icon-right-arrow.svg") no-repeat center center;
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .comments__wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items:  center;
+    align-items: center;
     align-content: flex-start;
     justify-content: space-between;
     background: url("../img/review@1x.jpg") no-repeat 0% center;
@@ -102,21 +100,18 @@
     width: 83px;
     border: none;
   }
-
 }
 
-@media(min-width: 1250px) {
-
+@media (min-width: 1250px) {
   .comments__wrapper {
     background-position: 100px center;
   }
 
-  .comments__title{
-    padding-left:  175px;
+  .comments__title {
+    padding-left: 175px;
   }
 
   .comments__list {
-    padding-left:  175px;
+    padding-left: 175px;
   }
-
 }

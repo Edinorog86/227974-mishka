@@ -88,8 +88,7 @@
   }
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .catalog-goods__header {
     padding-top: 104px;
     margin-bottom: 81px;
@@ -109,12 +108,9 @@
     height: 334px;
     margin-bottom: 0;
   }
-
 }
 
-
-@media(min-width: 1250px) {
-
+@media (min-width: 1250px) {
   .catalog-goods__item {
     flex-direction: column;
     flex-basis: 30%;
@@ -129,5 +125,4 @@
     width: 315px;
     height: 462px;
   }
-
 }

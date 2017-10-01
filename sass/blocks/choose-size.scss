@@ -1,12 +1,12 @@
 .choose-size {
-  width: 260px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
 .choose-size__item {
   box-sizing: border-box;
-  width: 82px;
+  width: 32%;
   padding: 17px 0;
   border: 2px solid #ececec;
   font-size: 17px;

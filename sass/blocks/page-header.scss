@@ -1,7 +1,13 @@
 
 .page-header {
+  height: 78px;
   border-bottom: 1px solid #ececec;
+  border-top: 1px solid #ececec;
   font-weight: bold;
+
+  &--nojs {
+    height: auto;
+  }
 }
 
 .page-header .container {
@@ -56,7 +62,27 @@
   display: none;
 }
 
+.page-header__menu {
+  top: 80px;
+  z-index:4;
+}
+
+.page-header__user-area {
+  top:250px;
+  z-index:4;
+}
+
 @media (min-width: 768px) {
+  .page-header__menu {
+    top: 0px;
+    z-index:4;
+  }
+
+  .page-header__user-area {
+    top:0px;
+    z-index:4;
+  }
+
   .page-header .container {
     padding: 0 50px;
   }
@@ -110,9 +136,9 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .page-header .container {
-    padding: 0 100px;
+    padding: 0 50px;
   }
 
   .page-header__wrapper {
@@ -121,7 +147,7 @@
   }
 
   .page-header__delivery-info {
-    right: 100px;
+    right: 50px;
   }
 
   .page-header__offers {

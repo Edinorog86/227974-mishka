@@ -88,7 +88,7 @@
   }
 
   .about__item {
-    flex-basis: 334px;
+    flex-basis: 50%;
 
     &--clean {
       order: 0;
@@ -116,7 +116,7 @@
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .about__title {
     font-size: 53px;
     line-height: 57px;

@@ -7,16 +7,18 @@
 
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
+    width:100%;
     padding: 0 50px;
     margin: 0 auto;
   }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1150px) {
   .container {
-    width: 1250px;
-    padding: 0 100px;
+    max-width: 1150px;
+    width: 100%;
+    padding: 0 50px;
     margin: 0 auto;
   }
 }

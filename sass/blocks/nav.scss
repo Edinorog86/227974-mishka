@@ -1,12 +1,29 @@
 .nav {
-  position: relative;
+  position: absolute;
   width: 100%;
+  background-color: #ffffff;
+
+  &--nojs {
+    position: static;
+  }
 }
 
 .nav__list {
   @include list-style-reset;
   display: flex;
   flex-direction: column;
+
+  &--opened {
+    display: block;
+  }
+
+  &--closed {
+    display: none;
+  }
+
+  &--nojs {
+    display: block;
+  }
 }
 
 .nav__item {
@@ -34,7 +51,7 @@
 .nav__toggle {
   position: absolute;
   padding: 0;
-  top: -51px;
+  top: -43px;
   right: 30px;
   width: 20px;
   height: 2px;
@@ -44,12 +61,12 @@
 
   &--open::after,
   &--open::before {
-    @include pseudo-element(20px, 2px, 4px, 0);
+    @include pseudo-element(20px, 2px, 6px, 0);
     background-color: #000000;
   }
 
   &--open::before {
-    top: -4px;
+    top: -6px;
   }
 
   &--close {
@@ -71,6 +88,8 @@
 @media (min-width: 768px) {
   .nav {
     width: auto;
+    position: relative;
+    background: transparent;
   }
 
   .nav__item {

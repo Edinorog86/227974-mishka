@@ -40,7 +40,7 @@
   }
 
   &--search {
-    background: url("../img/icon-search.svg") no-repeat center left 30px;
+    background: url("../img/icon-search.svg") no-repeat center left 33px;
   }
 
   &--cart {
@@ -110,8 +110,8 @@
     }
 
     &--cart {
-      width: 265px;
-      padding-left: 85px;
+      max-width: 265px;
+      padding-left: 81px;
     }
 
     &:first-of-type {

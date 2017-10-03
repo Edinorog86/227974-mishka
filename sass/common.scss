@@ -13,3 +13,9 @@ body {
 img {
   max-width: 100%;
 }
+
+@media (min-width: 768px) {
+  body {
+    min-width: 768px;
+  }
+}

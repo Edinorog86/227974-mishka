@@ -19,3 +19,9 @@ img {
     min-width: 768px;
   }
 }
+
+@media (min-width: 1150px) {
+  body {
+    min-width: 1150px;
+  }
+}

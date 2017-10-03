@@ -116,11 +116,23 @@
     height: 406px;
     order: 1;
   }
+
+  .weekly-product__price {
+    margin-top: 16px;
+    margin-bottom: 34px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 @media (min-width: 1150px) {
+  .weekly-product__wrapper {
+    padding-top: 70px;
+  }
+
   .weekly-product__legend {
-    margin-right: 56px;
+    margin-left: 32px;
+    margin-right: 40px;
   }
 
   .weekly-product__name {
@@ -134,20 +146,24 @@
     justify-content: flex-end;
     align-items: center;
     flex-basis: 100%;
-    margin-bottom: -150px;
+    margin-bottom: -172px;
     z-index: 2;
   }
 
   .weekly-product__info {
     flex-basis: 294px;
-    margin-top: 120px;
-    margin-right: 59px;
+    margin-top: 170px;
+    margin-right: 57px;
     margin-left: auto;
   }
 
+  .weekly-product__text {
+    margin-bottom: 50px;
+  }
+
   .weekly-product__order {
-    margin-top: -130px;
-    margin-left: 170px;
+    margin-top: -120px;
+    margin-left: 175px;
   }
 
   .weekly-product__image {

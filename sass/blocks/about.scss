@@ -1,7 +1,10 @@
+.about {
+  padding-top:38px;
+}
 
 .about__title {
   @include mobile-secondary-title;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
 }
 
 .about__list {
@@ -13,8 +16,8 @@
 
 .about__item {
   position: relative;
-  padding-top: 60px;
-  margin-bottom: 30px;
+  padding-top: 45px;
+  margin-bottom: 21px;
 
   &:last-child {
     margin-bottom: 0;
@@ -45,50 +48,58 @@
   }
 
   &--clean::after {
-    @include pseudo-element(50px, 50px, 0, 0);
+    @include pseudo-element(48px, 50px, 0, 0);
     background: url("../img/icon-feature-flower.svg") no-repeat center center;
   }
 
   &--cheap::after {
-    @include pseudo-element(50px, 50px, 0, 0);
+    @include pseudo-element(45px, 45px, 0, 0);
     background: url("../img/icon-feature-money.svg") no-repeat center center;
   }
 
   &--popular::after {
-    @include pseudo-element(50px, 50px, 0, 0);
+    @include pseudo-element(48px, 53px, 0, 0);
     background: url("../img/icon-feature-heart.svg") no-repeat center center;
   }
 
   &--cute::after {
-    @include pseudo-element(50px, 50px, 0, 0);
+    @include pseudo-element(40px, 50px, 0, 0);
     background: url("../img/icon-feature-ball.svg") no-repeat center center;
   }
 
   &--patriotic::after {
-    @include pseudo-element(60px, 50px, 0, 0);
+    @include pseudo-element(60px, 50px, -2px, -10px);
     background: url("../img/icon-feature-rocket.svg") no-repeat center center;
   }
 
   &--gift::after {
-    @include pseudo-element(50px, 50px, 0, 0);
+    @include pseudo-element(50px, 50px, 0, -7px);
     background: url("../img/icon-feature-gift.svg") no-repeat center center;
   }
 }
 
 @media (min-width: 768px) {
+  .about {
+    padding-top: 79px;
+  }
+
   .about__list {
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
+    font-size: 20px;
+    line-height: 22px;
   }
 
   .about__title {
+    margin-bottom: 40px;
     font-size: 43px;
     line-height: 50px;
   }
 
   .about__item {
     flex-basis: 50%;
+    margin-bottom: 25px;
 
     &--clean {
       order: 0;
@@ -113,17 +124,51 @@
     &--gift {
       order: 5;
     }
+
+    &--clean p {
+      width: 210px;
+    }
+
+    &--cheap p {
+      width: 240px;
+    }
+
+    &--popular p {
+      width: 220px;
+    }
+
+    &--cute p {
+      width: 250px;
+    }
+
+    &--patriotic p {
+      width: 300px;
+    }
+
+    &--gift p {
+      width: 250px;
+    }
   }
 }
 
+
 @media (min-width: 1150px) {
+  .about {
+    padding-top: 122px;
+  }
+
+  .about__item {
+    flex-basis: 350px;
+  }
+
   .about__title {
     font-size: 53px;
     line-height: 57px;
-    margin-left: 175px;
+    margin-left: 172px;
   }
 
   .about__list {
-    margin-left: 175px;
+    padding-left: 175px;
+    padding-right: 175px;
   }
 }

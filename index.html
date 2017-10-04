@@ -7,13 +7,13 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--nojs">
       <div class="page-header__wrapper container">
         <a class="page-header__logo" href="#">
           <img src="img/logo-mobile.svg" alt="Лого-мишка" width="87" height="36">
         </a>
-        <div class="page-header__menu nav">
-          <button class="nav__toggle nav__toggle--open nav__toggle--nojs" type="button">Открыть меню</button>
+        <div class="page-header__menu nav nav--nojs">
+          <button class="nav__toggle nav__toggle--closed" type="button">Открыть меню</button>
           <ul class="nav__list nav__list--closed">
             <li class="page-header__item nav__item nav__item--catalog">
               <a href="catalog.html">Каталог товаров</a>
@@ -23,7 +23,7 @@
             </li>
           </ul>
         </div>
-        <div class="page-header__user-area nav">
+        <div class="page-header__user-area nav nav--nojs">
           <ul class="nav__list nav__list--closed">
             <li class="page-header__item nav__item nav__item--search">
               <a href="#">Поиск по сайту</a>
@@ -131,8 +131,8 @@
           <div class="contacts__text">
             <h3 class="contacts__title">Контакты</h3>
             <div class="contacts__email">
-              <p class="contacts__legend">email:</p>
-              <a href="#" class="contacts__email-data">nfo@mimimishkashop.ru</a>
+              <p class="contacts__legend">e-mail:</p>
+              <a href="#" class="contacts__email-data">info@mimimishkashop.ru</a>
             </div>
             <div class="contacts__adress">
               <p class="contacts__legend">адрес:</p>
@@ -174,5 +174,6 @@
       </div>
       <button class="modal-cart__button button button--green" type="button">Добавить</button>
     </div>
+    <script src="js/main.js"></script>
   </body>
 </html>

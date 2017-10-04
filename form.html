@@ -6,14 +6,14 @@
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
-  <header class="page-header">
+  <header class="page-header page-header--nojs">
     <div class="page-header__wrapper container">
       <a class="page-header__logo" href="index.html">
         <img src="img/logo-mobile.svg" alt="Лого-мишка" width="100" height="50">
       </a>
-      <div class="page-header__menu nav">
-        <button class="nav__toggle nav__toggle--open" type="button">Открыть меню</button>
-        <ul class="nav__list">
+      <div class="page-header__menu nav nav--nojs">
+        <button class="nav__toggle nav__toggle--closed" type="button">Открыть меню</button>
+        <ul class="nav__list nav__list--closed">
           <li class="page-header__item nav__item">
             <a href="catalog.html">Каталог товаров</a>
           </li>
@@ -22,8 +22,8 @@
           </li>
         </ul>
       </div>
-      <div class="page-header__user-area nav">
-        <ul class="nav__list">
+      <div class="page-header__user-area nav nav--nojs">
+        <ul class="nav__list nav__list--closed">
           <li class="page-header__item nav__item nav__item--search">
             <a href="#">Поиск по сайту</a>
           </li>
@@ -152,5 +152,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html>

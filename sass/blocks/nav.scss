@@ -1,11 +1,8 @@
 .nav {
   position: absolute;
+  min-width: 320px;
   width: 100%;
   background-color: #ffffff;
-
-  &--nojs {
-    position: static;
-  }
 }
 
 .nav__list {
@@ -20,13 +17,14 @@
   &--closed {
     display: none;
   }
+}
 
-  &--nojs {
-    display: block;
-  }
+.nav__nojs .nav__list {
+  display: block;
 }
 
 .nav__item {
+  position: relative;
   box-sizing: border-box;
   padding: 0 30px;
   border-bottom: 1px solid #ececec;
@@ -38,14 +36,16 @@
   &:last-of-type {
     border-bottom: none;
   }
+}
 
-  &--search {
-    background: url("../img/icon-search.svg") no-repeat center left 33px;
-  }
+.nav__item--search a::after {
+  @include pseudo-element(22px, 22px, 32px, 32px);
+  background: url("../img/icon-search.svg") no-repeat center center;
+}
 
-  &--cart {
-    background: url("../img/icon-cart.svg") no-repeat center left 30px;
-  }
+.nav__item--cart a::after  {
+  @include pseudo-element(22px, 22px, 32px, 32px);
+  background: url("../img/icon-cart.svg") no-repeat center center;
 }
 
 .nav__toggle {
@@ -58,30 +58,50 @@
   font-size: 0;
   border: none;
   background-color: #000000;
+  cursor: pointer;
 
-  &--open::after,
-  &--open::before {
+  &--closed::after,
+  &--closed::before {
     @include pseudo-element(20px, 2px, 6px, 0);
     background-color: #000000;
   }
 
-  &--open::before {
+  &--closed::before {
     top: -6px;
   }
 
-  &--close {
+  &--opened {
     background-color: transparent;
   }
 
-  &--close::after,
-  &--close::before, {
+  &--opened::after,
+  &--opened::before, {
     @include pseudo-element(20px, 2px, 0, 0);
     background-color: #000000;
     transform: rotate(45deg);
   }
 
-  &--close::before {
+  &--opened::before {
     transform: rotate(-45deg);
+  }
+}
+
+.nav--nojs .nav__toggle {
+  display: none;
+}
+
+
+@media(min-width: 355px) and (max-width: 767px) {
+  .nav {
+    width: 100vw;
+
+    a {
+      position: relative;
+      width: 350px;
+      margin: 0 auto;
+      text-align: center;
+      padding-left: 0;
+    }
   }
 }
 

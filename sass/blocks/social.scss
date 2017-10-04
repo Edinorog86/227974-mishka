@@ -21,3 +21,9 @@
   width: 59px;
   height: 59px;
 }
+
+@media (min-width: 768px) {
+  .social {
+    border-bottom: none;
+  }
+}

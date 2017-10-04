@@ -13,6 +13,15 @@
   left: $left;
 }
 
+@mixin pseudo-element-right($width, $heigth, $top, $right) {
+  content: "";
+  position: absolute;
+  width: $width;
+  height: $heigth;
+  top: $top;
+  right: $right;
+}
+
 @mixin mobile-secondary-title {
   margin: 0;
   font-size: 25px;

@@ -11,3 +11,9 @@
   font-weight: normal;
   color: $text-color;
 }
+
+@media (min-width: 1150px) {
+  .form__intro-text {
+    margin-left: 175px;
+  }
+}

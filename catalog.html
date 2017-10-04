@@ -11,31 +11,48 @@
       <a class="page-header__logo" href="index.html">
         <img src="img/logo-mobile.svg" alt="Лого-мишка" width="100" height="50">
       </a>
-      <nav class="nav">
+      <div class="page-header__menu nav">
         <button class="nav__toggle nav__toggle--open" type="button">Открыть меню</button>
         <ul class="nav__list">
-          <li class="nav__item">
-            <a>Каталог товаров</a>
+          <li class="page-header__item nav__item">
+            <a href="#">Каталог товаров</a>
           </li>
-          <li class="nav__item">
+          <li class="page-header__item nav__item">
             <a href="form.html">Вязание на заказ</a>
           </li>
-          <li class="nav__item nav__item--search">
+        </ul>
+      </div>
+      <div class="page-header__user-area nav">
+        <ul class="nav__list">
+          <li class="page-header__item nav__item nav__item--search">
             <a href="#">Поиск по сайту</a>
           </li>
-          <li class="nav__item nav__item--cart">
+          <li class="page-header__item nav__item nav__item--cart">
             <a href="#">Корзина:пока пуста</a>
           </li>
         </ul>
-      </nav>
+      </div>
+      <div class="page-header__offers nav">
+        <ul class="nav__list">
+          <li class="page-header__item nav__item">
+            <a href="#">Новые поступления</a>
+          </li>
+          <li class="page-header__item nav__item">
+            <a href="#">Распродажа</a>
+          </li>
+        </ul>
+      </div>
+      <p class="page-header__delivery-info">Бесплатная доставка по России</p>
     </div>
   </header>
   <main class="page-main">
     <section class="catalog-goods">
       <header class="catalog-goods__header secondary-header">
+        <div class="container">
           <h1 class="secondary-header__title">Каталог товаров</h1>
+        </div>
       </header>
-      <div class="catalog-goods__wrapper container-padded">
+      <div class="catalog-goods__wrapper container">
         <div class='catalog-goods__list'>
           <div class="catalog-goods__item">
             <img class="catalog-goods__image" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик попрыгайчик" width="258" height="196">
@@ -74,13 +91,13 @@
       </div>
     </section>
     <section class="manufacture">
-      <div class="container-padded">
+      <div class="container">
         <div class="manufacture__wrapper">
-          <h3 class="manufacture__title">Процесс производства</h3>
           <div class="manufacture__video">
-            <video src="#" poster="img/video-mobile@1x.jpg" width="260" height="150"></video>
+            <video src="#" poster="none" width="260" height="150"></video>
           </div>
           <div class="manufacture__text-content">
+            <h3 class="manufacture__title">Процесс производства</h3>
             <p class="manufacture__discription">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
             <a href="#" class="manufacture__button button">Сделать заказ</a>
           </div>
@@ -89,7 +106,10 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
+    <div class="page-footer__wrapper container">
+      <a href="#" class="page-footer__logo">
+        <img src="img/logo-mobile.svg" alt="Лого-мишка" width="100" height="50">
+      </a>
       <div class="social">
         <a href="#" class="social__item social__item--instagram">Instagram</a>
         <a href="#" class="social__item social__item--facebook">Facebook</a>

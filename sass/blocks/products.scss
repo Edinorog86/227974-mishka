@@ -2,8 +2,13 @@
   background-color: #f9f9f9;
 }
 
+.products .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .products__wrapper {
-  padding-top: 75px;
+  padding-top: 72px;
   background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat center -15%;
 }
 
@@ -23,11 +28,10 @@
 }
 
 .products a {
+  width: 100%;
   box-sizing: border-box;
   display: block;
-  width: 100%;
-  padding: 28px 30px;
-  padding-right: 160px;
+  padding: 27px 30px;
   font-size: 19px;
   line-height: 24px;
   font-weight: bold;
@@ -39,12 +43,17 @@
   }
 }
 
+.products p {
+  margin: 0;
+  width: 130px;
+}
+
 .products__interior {
   position: relative;
   background: #63d1bb;
 
   &::after {
-    @include pseudo-element(62px, 70px, 18px, 230px);
+    @include pseudo-element-right(62px, 70px, 17px, 24px);
     background: url("../img/icon-interior.svg") no-repeat center center;
     opacity: 0.5;
   }
@@ -55,8 +64,71 @@
   background: #56c3b2;
 
   &::after {
-    @include pseudo-element(62px, 70px, 18px, 230px);
+    @include pseudo-element-right(62px, 70px, 17px, 24px);
     background: url("../img/icon-toy.svg") no-repeat center center;
     opacity: 0.5;
+  }
+}
+
+@media (min-width: 768px) {
+  .products a {
+    padding: 29px 37px;
+    padding-bottom: 27px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .products__toys {
+    &::after {
+      top: 25px;
+      right: 30px;
+    }
+  }
+
+  .products__interior {
+    &::after {
+      top: 25px;
+      right: 25px;
+    }
+  }
+
+  .products .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .products__wrapper {
+    padding-top: 153px;
+    background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat top 0% center;
+    background-size: 149%;
+  }
+
+  .products__title {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 373px;
+  }
+
+  .products__categories {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1150px) {
+  .products__wrapper {
+    background-size: 105%;
+    background-position: top 60% center;
+  }
+
+  .products .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .products__title {
+    margin-bottom: 360px;
+    padding: 0 150px;
+    font-size: 53px;
+    line-height: 57px;
   }
 }

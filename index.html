@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="veiwport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Мишка</title>
   </head>
@@ -10,48 +10,63 @@
     <header class="page-header">
       <div class="page-header__wrapper container">
         <a class="page-header__logo" href="#">
-          <img src="img/logo-mobile.svg" alt="Лого-мишка" width="100" height="50">
+          <img src="img/logo-mobile.svg" alt="Лого-мишка" width="87" height="36">
         </a>
-        <nav class="nav">
-          <button class="nav__toggle nav__toggle--open" type="button">Открыть меню</button>
-          <ul class="nav__list">
-            <li class="nav__item">
+        <div class="page-header__menu nav">
+          <button class="nav__toggle nav__toggle--open nav__toggle--nojs" type="button">Открыть меню</button>
+          <ul class="nav__list nav__list--closed">
+            <li class="page-header__item nav__item nav__item--catalog">
               <a href="catalog.html">Каталог товаров</a>
             </li>
-            <li class="nav__item">
+            <li class="page-header__item nav__item nav__item--order">
               <a href="form.html">Вязание на заказ</a>
             </li>
-            <li class="nav__item nav__item--search">
+          </ul>
+        </div>
+        <div class="page-header__user-area nav">
+          <ul class="nav__list nav__list--closed">
+            <li class="page-header__item nav__item nav__item--search">
               <a href="#">Поиск по сайту</a>
             </li>
-            <li class="nav__item nav__item--cart">
-              <a href="#">Корзина:пока пуста</a>
+            <li class="page-header__item nav__item nav__item--cart">
+              <a href="#">Корзина: пока пуста</a>
             </li>
           </ul>
-        </nav>
+        </div>
+        <div class="page-header__offers nav">
+          <ul class="nav__list">
+            <li class="page-header__item nav__item">
+              <a href="#">Новые поступления</a>
+            </li>
+            <li class="page-header__item nav__item">
+              <a href="#">Распродажа</a>
+            </li>
+          </ul>
+        </div>
+        <p class="page-header__delivery-info">Бесплатная доставка по России</p>
       </div>
     </header>
     <main class="page-main">
       <section class="products">
         <div class="products__wrapper container">
-          <h1 class="products__title">Милые штучки ручной работы для дома</h1>
+          <h1 class="products__title">Милые штуки ручной<br> работы для дома</h1>
           <div class="products__categories">
-            <div class="products__interior">
-              <a href="#">Предметы интерьера</a>
-            </div>
-            <div class="products__toys">
-              <a href="#">Детские игрушки</a>
-            </div>
+            <a href="#" class="products__interior">
+              <p>Предметы интерьера</p>
+            </a>
+            <a href="#" class="products__toys">
+              <p>Детские игрушки</p>
+            </a>
           </div>
         </div>
       </section>
       <section class="weekly-product">
         <div class="weekly-product__wrapper container">
+          <header class="weekly-product__title">
+            <h2 class="weekly-product__name">Вязаные корзинки</h2>
+            <p class="weekly-product__legend">Товар недели</p>
+          </header>
           <div class="weekly-product__info">
-            <header class="weekly-product__title">
-                <h2 class="weekly-product__name">Вязаные корзинки</h2>
-                <p class="weekly-product__legend">Товар недели</p>
-            </header>
             <p class="weekly-product__text">
               Экологически чистая пряжа, ручная работа.
               Доступны в шести расцветках, и трех размерах.
@@ -70,29 +85,29 @@
                 <td>15 см</td>
               </tr>
             </table>
-            <img class="weekly-product__image" src="img/triple-set-mobile@1x.jpg" alt="Картинка товара" wdith="260" height="315">
-            <div class="weekly-product__order">
-              <p class="weekly-product__price">Цена: 990 руб.</p>
-              <a href="#" class="weekly-product__button button">Заказать</a>
-            </div>
+          </div>
+          <img class="weekly-product__image" src="img/triple-set-mobile@1x.jpg" alt="Картинка товара" wdith="260" height="315">
+          <div class="weekly-product__order">
+            <p class="weekly-product__price">Цена: 990 руб.</p>
+            <a href="#" class="weekly-product__button button">Заказать</a>
           </div>
         </div>
       </section>
       <section class="about">
-        <div class="container-padded">
+        <div class="container">
           <h3 class="about__title">Коротко о нас:</h3>
           <ul class="about__list">
-            <li class="about__item about__item--clean">Экологически чистые материалы</li>
-            <li class="about__item about__item--cheap">Скандинавский стиль по российской цене</li>
-            <li class="about__item about__item--popular">Увеличивает лайки на фотографиях</li>
-            <li class="about__item about__item--cute">Связано вручную с любовью и умилением</li>
-            <li class="about__item about__item--patriotic">Поддержка отечественного производителя</li>
-            <li class="about__item about__item--gift">Поставляется в подарочной упаковке</li>
+            <li class="about__item about__item--clean"><p>Экологически чистые материалы</p></li>
+            <li class="about__item about__item--cheap"><p>Скандинавский стиль по российской цене</p></li>
+            <li class="about__item about__item--popular"><p>Увеличивает лайки на фотографиях</p></li>
+            <li class="about__item about__item--cute"><p>Связано вручную с любовью и умилением</p></li>
+            <li class="about__item about__item--patriotic"><p>Поддержка отечественного производителя</p></li>
+            <li class="about__item about__item--gift"><p>Поставляется в подарочной упаковке</p></li>
           </ul>
         </div>
       </section>
       <section class="comments">
-        <div class="comments__wrapper container-padded">
+        <div class="comments__wrapper container">
           <h3 class="comments__title">Отзывы</h3>
           <div class="comments__list">
             <blockquote class="comments__item">
@@ -112,32 +127,32 @@
         </div>
       </section>
       <section class="contacts">
-        <div class="contacts__text">
-          <div class="contacts__wrapper container-padded">
+        <div class="contacts__wrapper">
+          <div class="contacts__text">
             <h3 class="contacts__title">Контакты</h3>
-              <div class="contacts__email">
-                <p class="contacts__legend">email:</p>
-                <a href="#" class="contacts__email-data">nfo@mimimishkashop.ru</a>
-              </div>
-              <div class="contacts__adress">
-                <p class="contacts__legend">адрес:</p>
-                <p class="contacts__adress-data">г. Санкт-Петербург,
-                    ул. Большая Конюшенная,
-                    д. 19/8, офис 101</p>
-              </div>
+            <div class="contacts__email">
+              <p class="contacts__legend">email:</p>
+              <a href="#" class="contacts__email-data">nfo@mimimishkashop.ru</a>
+            </div>
+            <div class="contacts__adress">
+              <p class="contacts__legend">адрес:</p>
+              <p class="contacts__adress-data">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</p>
             </div>
           </div>
           <div class="contacts__map">
-            <img src="../img/map-mobile@1x.jpg" alt="карта" width="320" height="457">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2sBolshaya+Konyushennaya+ul.%2C+19%2C+101%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1506859806364" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
-          <div class="container-padded">
+          <div class="contacts__actions">
             <a href="#" class="contacts__button button">Напишите нам</a>
           </div>
         </div>
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
+        <a href="#" class="page-footer__logo">
+          <img src="img/logo-mobile.svg" alt="Лого-мишка" width="100" height="50">
+        </a>
         <div class="social">
           <a href="#" class="social__item social__item--instagram">Instagram</a>
           <a href="#" class="social__item social__item--facebook">Facebook</a>

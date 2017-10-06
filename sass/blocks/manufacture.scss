@@ -7,11 +7,13 @@
   box-sizing: border-box;
   width: 200px;
   padding-left: 64px;
-  top: -250px;
-  left: 35px;
+  top: -243px;
+  left: 24px;
+  font-size: 17px;
+  line-height: 24px;
 
   &::after {
-    @include pseudo-element(42px, 25px, 50%, 0%);
+    @include pseudo-element(42px, 25px, 48%, 2%);
     transform: translateY(-50%);
     background: url("../img/icon-video.svg") no-repeat center center;
   }
@@ -29,6 +31,8 @@
 }
 
 .manufacture__discription {
+  margin-top: 22px;
+  margin-bottom: 27px;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;

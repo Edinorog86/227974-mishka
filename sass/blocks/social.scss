@@ -3,7 +3,7 @@
   display: flex;
 
   &::after {
-    @include pseudo-element(100%, 1px, 150%, 0);
+    @include pseudo-element(100%, 1px, 58px, 0);
     background-color: #e5e5e5;
   }
 

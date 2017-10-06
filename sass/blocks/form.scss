@@ -1,19 +1,29 @@
 .form {
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 }
 
 .form__intro-text {
   margin: 0;
-  margin-top: 30px;
-  margin-bottom: 26px;
+  margin-top: 20px;
+  margin-bottom: 24px;
   font-size: 13px;
   line-height: 24px;
   font-weight: normal;
   color: $text-color;
 }
 
+@media(min-width: 768px) {
+  .form {
+    margin-bottom: 50px;
+  }
+}
+
 @media (min-width: 1150px) {
   .form__intro-text {
     margin-left: 175px;
+  }
+
+  .form__intro-text {
+    width: 700px;
   }
 }

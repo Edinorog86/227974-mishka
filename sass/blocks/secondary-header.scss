@@ -1,7 +1,7 @@
 .secondary-header {
-  padding: 74px 0;
+  padding-top: 71px;
+  padding-bottom: 77px;
   background-color: #f1f1f1;
-  margin-bottom: 31px;
 }
 
 .secondary-header__title {
@@ -14,6 +14,11 @@
 }
 
 @media (min-width: 768px) {
+  .secondary-header {
+    padding-top: 90px;
+    margin-bottom: 80px;
+  }
+
   .secondary-header__title {
     width: 400px;
     font-size: 43px;
@@ -22,6 +27,10 @@
 }
 
 @media (min-width: 1150px) {
+  .secondary-header {
+    margin-bottom: 150px;
+  }
+
   .secondary-header__title {
     width: 500px;
     font-size: 53px;

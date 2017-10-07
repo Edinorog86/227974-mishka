@@ -32,7 +32,7 @@
   }
 
   .order-form__wrapper:last-child {
-    margin-bottom:0px;
+    margin-bottom: 0;
   }
 
   .order-form__title {
@@ -186,7 +186,7 @@
 }
 
 label[for="order-form__accessories"] {
- margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .order-form__bio {
@@ -300,6 +300,8 @@ label[for="order-form__accessories"] {
 
   .order-form__additional {
     width: 501px;
+    font-size: 19px;
+    line-height: 19px;
   }
 
   .order-form__wishes {
@@ -318,17 +320,14 @@ label[for="order-form__accessories"] {
   .order-form__sidetext {
     margin-bottom: 0;
     order: 1;
+    font-size: 17px;
+    line-height: 30px;
   }
 
   .order-form__submit {
     width: 231px;
     padding: 15px 0;
     font-size: 17px;
-  }
-
-  .order-form__sidetext {
-    font-size: 17px;
-    line-height: 30px;
   }
 
   .order-form__bio,
@@ -343,11 +342,6 @@ label[for="order-form__accessories"] {
     }
   }
 
-  .order-form__additional {
-    font-size: 19px;
-    line-height: 19px;
-  }
-
   .order-form__phone {
     background: url("../img/icon-phone.svg") no-repeat right 25px bottom 12px;
   }
@@ -355,11 +349,9 @@ label[for="order-form__accessories"] {
   .order-form__email {
     background: url("../img/icon-mail.svg") no-repeat right 24px bottom 5px;
   }
-
 }
 
 @media (min-width: 1150px) {
-
   .order-form__inputs,
   .order-form__additional {
     width: 700px;
@@ -368,10 +360,11 @@ label[for="order-form__accessories"] {
   .order-form__color {
     .order-form__inputs {
       width: 875px;
+      justify-content: flex-start;
     }
 
     label {
-      flex-basis: 29%;
+      flex-basis: 30%;
     }
   }
 
@@ -383,6 +376,7 @@ label[for="order-form__accessories"] {
 
   .order-form__title {
     width: 175px;
+
     legend {
       margin-left: 60px;
     }
@@ -399,16 +393,6 @@ label[for="order-form__accessories"] {
 
   .order-form__sidetext {
     margin-right: 175px;
-  }
-
-  .order-form__color {
-    .order-form__inputs {
-      justify-content: flex-start;
-    }
-
-    label {
-      flex-basis: 30%;
-    }
   }
 
   .order-form__wishes {

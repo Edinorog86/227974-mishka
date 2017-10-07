@@ -32,10 +32,6 @@
   &:first-of-type {
     border-top: 1px solid #ececec;
   }
-
-  &:last-of-type {
-    border-bottom: none;
-  }
 }
 
 .nav__item--search a::after {
@@ -43,7 +39,7 @@
   background: url("../img/icon-search.svg") no-repeat center center;
 }
 
-.nav__item--cart a::after  {
+.nav__item--cart a::after {
   @include pseudo-element(22px, 22px, 32px, 32px);
   background: url("../img/icon-cart.svg") no-repeat center center;
 }
@@ -51,32 +47,23 @@
 .nav__toggle {
   position: absolute;
   padding: 0;
-  top: -43px;
+  top: -52px;
   right: 30px;
   width: 20px;
-  height: 2px;
+  height: 14px;
   font-size: 0;
   border: none;
-  background-color: #000000;
+  box-shadow: 0 2px 0 0 #000000 inset, 0 6px 0 0 #ffffff inset, 0 8px 0 0 #000000 inset, 0 12px 0 0 #ffffff inset, 0 14px 0 0 #000000 inset;
   cursor: pointer;
-
-  &--closed::after,
-  &--closed::before {
-    @include pseudo-element(20px, 2px, 6px, 0);
-    background-color: #000000;
-  }
-
-  &--closed::before {
-    top: -6px;
-  }
 
   &--opened {
     background-color: transparent;
+    box-shadow: none;
   }
 
   &--opened::after,
   &--opened::before, {
-    @include pseudo-element(20px, 2px, 0, 0);
+    @include pseudo-element(20px, 2px, 7px, 0);
     background-color: #000000;
     transform: rotate(45deg);
   }
@@ -91,7 +78,7 @@
 }
 
 
-@media(min-width: 355px) and (max-width: 767px) {
+@media (min-width: 355px) and (max-width: 767px) {
   .nav {
     width: 100vw;
 

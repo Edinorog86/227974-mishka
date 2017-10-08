@@ -1,7 +1,12 @@
+.weekly-product {
+  background: url("../img/bg-zigzag-line.svg") repeat-x bottom  left 15px;
+  background-size: 300px;
+}
+
 .weekly-product__wrapper {
   box-sizing: border-box;
   padding-top: 28px;
-  padding-bottom: 34px;
+  padding-bottom: 43px;
 }
 
 .weekly-product__name {
@@ -64,6 +69,10 @@
 }
 
 @media (min-width: 768px) {
+  .weekly-product {
+    background-size: 800px;
+  }
+
   .weekly-product__name {
     font-size: 43px;
     line-height: 50px;
@@ -94,6 +103,7 @@
 
   .weekly-product__wrapper {
     padding-top: 47px;
+    padding-bottom: 63px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -126,8 +136,13 @@
 }
 
 @media (min-width: 1150px) {
+  .weekly-product {
+    background-size: 1100px;
+  }
+
   .weekly-product__wrapper {
     padding-top: 70px;
+    padding-bottom: 93px;
   }
 
   .weekly-product__legend {

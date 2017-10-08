@@ -64,11 +64,13 @@
 
 .page-header__menu {
   top: 78px;
+  left: 0;
   z-index: 4;
 }
 
 .page-header__user-area {
   top: 248px;
+  left: 0;
   z-index: 4;
 }
 
@@ -117,6 +119,7 @@
     line-height: 24px;
     color: $text-color;
     font-weight: normal;
+    z-index: 1;
   }
 
   .page-header {
@@ -140,6 +143,13 @@
 }
 
 @media (min-width: 1150px) {
+  .page-header__logo {
+    padding: 0;
+    margin-right: 22px;
+    width: 152px;
+    height: 76px;
+  }
+
   .page-header .container {
     padding: 0 50px;
   }
@@ -180,9 +190,5 @@
     .page-header__item:last-child {
       padding-left: 35px;
     }
-  }
-
-  .page-header__logo {
-    padding: 16px 0;
   }
 }

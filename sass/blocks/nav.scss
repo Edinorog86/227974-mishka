@@ -1,11 +1,8 @@
 .nav {
   position: absolute;
+  min-width: 320px;
   width: 100%;
   background-color: #ffffff;
-
-  &--nojs {
-    position: static;
-  }
 }
 
 .nav__list {
@@ -20,13 +17,14 @@
   &--closed {
     display: none;
   }
+}
 
-  &--nojs {
-    display: block;
-  }
+.nav__nojs .nav__list {
+  display: block;
 }
 
 .nav__item {
+  position: relative;
   box-sizing: border-box;
   padding: 0 30px;
   border-bottom: 1px solid #ececec;
@@ -34,54 +32,63 @@
   &:first-of-type {
     border-top: 1px solid #ececec;
   }
+}
 
-  &:last-of-type {
-    border-bottom: none;
-  }
+.nav__item--search a::after {
+  @include pseudo-element(22px, 22px, 32px, 32px);
+  background: url("../img/icon-search.svg") no-repeat center center;
+}
 
-  &--search {
-    background: url("../img/icon-search.svg") no-repeat center left 33px;
-  }
-
-  &--cart {
-    background: url("../img/icon-cart.svg") no-repeat center left 30px;
-  }
+.nav__item--cart a::after {
+  @include pseudo-element(22px, 22px, 32px, 32px);
+  background: url("../img/icon-cart.svg") no-repeat center center;
 }
 
 .nav__toggle {
   position: absolute;
   padding: 0;
-  top: -43px;
+  top: -52px;
   right: 30px;
   width: 20px;
-  height: 2px;
+  height: 14px;
   font-size: 0;
   border: none;
-  background-color: #000000;
+  box-shadow: 0 2px 0 0 #000000 inset, 0 6px 0 0 #ffffff inset, 0 8px 0 0 #000000 inset, 0 12px 0 0 #ffffff inset, 0 14px 0 0 #000000 inset;
+  cursor: pointer;
 
-  &--open::after,
-  &--open::before {
-    @include pseudo-element(20px, 2px, 6px, 0);
-    background-color: #000000;
-  }
-
-  &--open::before {
-    top: -6px;
-  }
-
-  &--close {
+  &--opened {
     background-color: transparent;
+    box-shadow: none;
   }
 
-  &--close::after,
-  &--close::before, {
-    @include pseudo-element(20px, 2px, 0, 0);
+  &--opened::after,
+  &--opened::before, {
+    @include pseudo-element(20px, 2px, 7px, 0);
     background-color: #000000;
     transform: rotate(45deg);
   }
 
-  &--close::before {
+  &--opened::before {
     transform: rotate(-45deg);
+  }
+}
+
+.nav--nojs .nav__toggle {
+  display: none;
+}
+
+
+@media (min-width: 355px) and (max-width: 767px) {
+  .nav {
+    width: 100vw;
+
+    a {
+      position: relative;
+      width: 350px;
+      margin: 0 auto;
+      text-align: center;
+      padding-left: 0;
+    }
   }
 }
 

@@ -94,7 +94,7 @@
 @media (min-width: 768px) {
   .catalog-goods__item {
     display: flex;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
   }
 
   .catalog-goods__title {
@@ -134,18 +134,32 @@
 }
 
 @media (min-width: 1150px) {
+  .catalog-goods__list {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
   .catalog-goods__item {
     flex-direction: column;
     flex-basis: 30%;
-  }
-
-  .catalog-goods__list {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 58px;
   }
 
   .catalog-goods__image {
     width: 315px;
     height: 462px;
+  }
+
+  .catalog-goods__params {
+    padding-bottom: 11px;
+  }
+
+  .catalog-goods__discription {
+    padding: 0 28px;
+  }
+
+  .catalog-goods__buy {
+    padding: 24px 0;
   }
 }

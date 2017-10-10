@@ -9,7 +9,11 @@
   <header class="page-header page-header--nojs">
     <div class="page-header__wrapper container">
       <a class="page-header__logo" href="index.html">
-        <img src="img/logo-mobile.svg" alt="Лого-мишка" width="87" height="36">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img src="img/logo-mobile.svg" alt="Лого-мишка">
+        </picture>
       </a>
       <div class="page-header__menu nav nav--nojs">
         <button class="nav__toggle nav__toggle--closed" type="button">Открыть меню</button>
@@ -139,7 +143,7 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a href="#" class="page-footer__logo">
-        <img src="img/logo-mobile.svg" alt="Лого-мишка" width="100" height="50">
+        <img src="img/logo-footer.svg" alt="Лого-мишка">
       </a>
       <div class="social">
         <a href="#" class="social__item social__item--instagram">Instagram</a>
@@ -153,5 +157,6 @@
     </div>
   </footer>
   <script src="js/main.js"></script>
+  <script src="js/picturefill.js"></script>
 </body>
 </html>

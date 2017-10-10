@@ -15,12 +15,14 @@
 
 @media (min-width: 768px) {
   .secondary-header {
+    background: #f1f1f1 url("../img/bg-zigzag-fill.svg") repeat-x -40% 100%;
     padding-top: 90px;
-    margin-bottom: 80px;
+    padding-bottom: 107px;
+    margin-bottom: 55px;
 
     &--catalog {
       padding-top: 90px;
-      margin-bottom: 85px;
+      margin-bottom: 55px;
     }
   }
 
@@ -33,7 +35,12 @@
 
 @media (min-width: 1150px) {
   .secondary-header {
-    margin-bottom: 150px;
+    padding-bottom: 122px;
+    margin-bottom: 105px;
+
+    &--catalog {
+      margin-bottom: 111px;
+    }
   }
 
   .secondary-header__title {

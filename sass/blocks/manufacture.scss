@@ -66,14 +66,12 @@
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.3;
   }
-}
 
-.manufacture__video {
   video {
-  background: transparent url("../img/video-mobile@1x.jpg") no-repeat center center;
-  background-size: cover;
+    background: transparent url("../img/video-mobile@1x.jpg") no-repeat center center;
+    background-size: cover;
 
-    @media(min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: transparent url("../img/video-mobile@2x.jpg") no-repeat center center;
       background-size: cover;
     }
@@ -126,7 +124,7 @@
       background: transparent url("../img/video-tablet@1x.jpg") no-repeat center center;
       background-size: cover;
 
-      @media(min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: transparent url("../img/video-tablet@2x.jpg") no-repeat center center;
         background-size: cover;
       }
@@ -159,7 +157,7 @@
       background: transparent url("../img/video-desktop@1x.jpg") no-repeat center center;
       background-size: cover;
 
-      @media(min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
         background: transparent url("../img/video-desktop@2x.jpg") no-repeat center center;
         background-size: cover;
       }

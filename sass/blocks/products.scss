@@ -93,6 +93,8 @@
   }
 
   .products__toys {
+    transition: transform 0.2s ease;
+
     &::after {
       top: 25px;
       right: 30px;
@@ -104,6 +106,8 @@
   }
 
   .products__interior {
+    transition: transform 0.2s ease;
+
     &::after {
       top: 25px;
       right: 25px;

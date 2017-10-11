@@ -7,6 +7,10 @@
   @include mobile-secondary-title;
   margin-bottom: 25px;
   font-size: 18px;
+
+  & svg {
+    display: none;
+  }
 }
 
 .contacts__wrapper {
@@ -125,11 +129,15 @@
     width: 100%;
     font-size: 43px;
     line-height: 50px;
+  }
 
-    &::after {
-      @include pseudo-element(51px, 87px, -35%, 93%);
-      background: url("../img/icon-flag.svg") no-repeat center center;
-    }
+  .contacts__title svg {
+    display: block;
+    position: absolute;
+    width: 51px;
+    height: 87px;
+    top: -35%;
+    left: 93%;
   }
 
   .contacts__adress-data {
@@ -174,7 +182,7 @@
     line-height: 57px;
     width: 100%;
 
-    &::after {
+    & svg {
       top: -13px;
       left: -110px;
     }

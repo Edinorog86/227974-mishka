@@ -10,6 +10,11 @@
   }
 }
 
+.page-header__logo {
+  width: 89px;
+  height: 38px;
+}
+
 .page-header .container {
   padding: 0 0;
 }
@@ -75,6 +80,11 @@
 }
 
 @media (min-width: 768px) {
+  .page-header__logo {
+    width: 112px;
+    height: 46px;
+  }
+
   .page-header__menu {
     top: 0;
     z-index: 4;
@@ -143,7 +153,7 @@
 @media (min-width: 1150px) {
   .page-header__logo {
     padding: 0;
-    margin-right: 22px;
+    margin-right: 28px;
     width: 152px;
     height: 76px;
   }

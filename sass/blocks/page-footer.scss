@@ -27,5 +27,13 @@
 
   .page-footer__logo {
     display: block;
+
+    & svg:hover {
+      fill: $main-color;
+    }
+
+    & svg:active {
+      opacity: 0.3;
+    }
   }
 }

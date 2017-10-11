@@ -59,9 +59,10 @@
   position: relative;
   background: #63d1bb;
 
-  &::after {
-    @include pseudo-element-right(62px, 70px, 17px, 24px);
-    background: url("../img/icon-interior.svg") no-repeat center center;
+  & svg {
+    position: absolute;
+    top: 17px;
+    right: 24px;
     opacity: 0.5;
   }
 }
@@ -70,9 +71,10 @@
   position: relative;
   background: #56c3b2;
 
-  &::after {
-    @include pseudo-element-right(62px, 70px, 17px, 24px);
-    background: url("../img/icon-toy.svg") no-repeat center center;
+  & svg {
+    position: absolute;
+    top: 17px;
+    right: 24px;
     opacity: 0.5;
   }
 }

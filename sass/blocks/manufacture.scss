@@ -12,10 +12,12 @@
   font-size: 17px;
   line-height: 24px;
 
-  &::after {
-    @include pseudo-element(42px, 25px, 48%, 2%);
+  & svg {
+    position: absolute;
+    top: 48%;
+    left: 10px;
     transform: translateY(-50%);
-    background: url("../img/icon-video.svg") no-repeat center center;
+    fill: $main-color;
   }
 }
 
@@ -50,19 +52,23 @@
 
   position: relative;
 
-  &::after {
-    @include pseudo-element(102px, 76px, 50%, 50%);
+  & svg {
+    position: absolute;
+    width: 102px;
+    height: 76px;
+    top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    background: url("../img/icon-play.svg") no-repeat center center;
     transition: transform 0.2s ease-in-out;
+    z-index: 1;
     cursor: pointer;
   }
 
-  &:hover::after {
+  &:hover svg {
     transform: translate(-50%, -50%) scale(1.2);
   }
 
-  &:active::after {
+  &:active svg {
     transform: translate(-50%, -50%) scale(0.8);
     opacity: 0.3;
   }
@@ -93,8 +99,8 @@
     font-size: 20px;
     line-height: 24px;
 
-    &::after {
-      left: -6px;
+    & svg {
+      left: 0;
     }
   }
 
@@ -176,9 +182,9 @@
     padding-top: 50px;
     padding-left: 0;
 
-    &::after {
+    & svg {
       top: 13px;
-      left: 0;
+      left: 4px;
     }
   }
 }

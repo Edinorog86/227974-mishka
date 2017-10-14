@@ -28,6 +28,7 @@
 
 .order-form__contacts {
   .order-form__wrapper {
+    position: relative;
     margin-bottom: 32px;
   }
 
@@ -108,6 +109,7 @@
   line-height: 18px;
   font-weight: normal;
   color: $text-color;
+  background-color: transparent;
 
   &::placeholder {
     opacity: 0.3;
@@ -161,17 +163,32 @@
 }
 
 .order-form__email,
-.order-form__phone, {
+.order-form__phone {
+  position: relative;
   box-sizing: border-box;
   padding-right: 44px;
 }
 
-.order-form__phone {
-  background: url("../img/icon-phone.svg") no-repeat right 8px bottom 12px;
+.order-form__phone-icon {
+  position: absolute;
+  right: 8px;
+  bottom: 18px;
+  opacity: 0.2;
 }
 
-.order-form__email {
-  background: url("../img/icon-mail.svg") no-repeat right 5px bottom 5px;
+.order-form__email-icon {
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  opacity: 0.2;
+}
+
+.order-form__email:focus + .order-form__email-icon,
+.order-form__email:hover + .order-form__email-icon,
+.order-form__phone:hover + .order-form__phone-icon,
+.order-form__phone:hover + .order-form__phone-icon {
+  fill: $main-color;
+  opacity: 1;
 }
 
 .order-form__wishes {
@@ -342,12 +359,14 @@ label[for="order-form__accessories"] {
     }
   }
 
-  .order-form__phone {
-    background: url("../img/icon-phone.svg") no-repeat right 25px bottom 12px;
+  .order-form__phone-icon {
+    bottom: 18px;
+    right: 25px;
   }
 
-  .order-form__email {
-    background: url("../img/icon-mail.svg") no-repeat right 24px bottom 5px;
+  .order-form__email-icon {
+    bottom: 10px;
+    right: 20px;
   }
 }
 
@@ -405,11 +424,11 @@ label[for="order-form__accessories"] {
     }
   }
 
-  .order-form__phone {
-    background: url("../img/icon-phone.svg") no-repeat right 7px bottom 12px;
+  .order-form__phone-icon {
+    right: 17%;
   }
 
-  .order-form__email {
-    background: url("../img/icon-mail.svg") no-repeat right 5px bottom 5px;
+  .order-form__email-icon {
+    right: 17%;
   }
 }

@@ -61,7 +61,7 @@
 
   & svg {
     position: absolute;
-    top: 17px;
+    top: 50px;
     right: 24px;
     opacity: 0.5;
   }
@@ -73,7 +73,7 @@
 
   & svg {
     position: absolute;
-    top: 17px;
+    top: 25px;
     right: 24px;
     opacity: 0.5;
   }
@@ -97,11 +97,6 @@
   .products__toys {
     transition: transform 0.2s ease;
 
-    &::after {
-      top: 25px;
-      right: 30px;
-    }
-
     &:hover {
       transform: translateY(-5px);
     }
@@ -109,11 +104,6 @@
 
   .products__interior {
     transition: transform 0.2s ease;
-
-    &::after {
-      top: 25px;
-      right: 25px;
-    }
 
     &:hover {
       transform: translateY(-5px);

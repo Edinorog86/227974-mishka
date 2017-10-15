@@ -122,10 +122,6 @@
   }
 }
 
-.order-form legend {
-  text-transform: uppercase;
-}
-
 .order-form__additional {
   box-sizing: border-box;
   padding: 14px 17px;
@@ -395,13 +391,9 @@ label[for="order-form__accessories"] {
 
   .order-form__title {
     width: 175px;
-
-    legend {
-      margin-left: 60px;
-    }
   }
 
-  label.order-form__title {
+  .order-form__title {
     box-sizing: border-box;
     padding-left: 60px;
   }

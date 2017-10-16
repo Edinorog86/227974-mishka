@@ -26,6 +26,10 @@
   font-size: 0;
   width: 33px;
   height: 39px;
+
+  svg {
+    fill: $main-color;
+  }
 }
 
 @media (min-width: 768px) {

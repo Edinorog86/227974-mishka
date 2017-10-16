@@ -181,7 +181,7 @@
 
 .order-form__email:focus + .order-form__email-icon,
 .order-form__email:hover + .order-form__email-icon,
-.order-form__phone:hover + .order-form__phone-icon,
+.order-form__phone:focus + .order-form__phone-icon,
 .order-form__phone:hover + .order-form__phone-icon {
   fill: $main-color;
   opacity: 1;
@@ -391,9 +391,6 @@ label[for="order-form__accessories"] {
 
   .order-form__title {
     width: 175px;
-  }
-
-  .order-form__title {
     box-sizing: border-box;
     padding-left: 60px;
   }
@@ -412,7 +409,7 @@ label[for="order-form__accessories"] {
     }
 
     .order-form__wrapper {
-      margin-bottom: 43px;
+      margin-bottom: 46px;
     }
   }
 

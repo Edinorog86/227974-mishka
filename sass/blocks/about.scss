@@ -49,9 +49,10 @@
 
   svg {
     position: absolute;
+    fill: $main-color;
   }
 
-  &--clean svg{
+  &--clean svg {
     top: 7px;
     left: 7px;
   }
@@ -65,7 +66,7 @@
     left: 7px;
   }
 
-  &--cute svg{
+  &--cute svg {
     top: 10px;
     left: 2px;
   }

@@ -59,10 +59,10 @@
   position: relative;
   background: #63d1bb;
 
-  & svg {
+  svg {
     position: absolute;
-    top: 50px;
-    right: 24px;
+    top: 24px;
+    right: 35px;
     opacity: 0.5;
   }
 }
@@ -71,10 +71,10 @@
   position: relative;
   background: #56c3b2;
 
-  & svg {
+  svg {
     position: absolute;
-    top: 25px;
-    right: 24px;
+    top: 23px;
+    right: 28px;
     opacity: 0.5;
   }
 }
@@ -100,6 +100,11 @@
     &:hover {
       transform: translateY(-5px);
     }
+
+    svg {
+      top: 29px;
+      right: 35px;
+    }
   }
 
   .products__interior {
@@ -107,6 +112,11 @@
 
     &:hover {
       transform: translateY(-5px);
+    }
+
+    svg {
+      top: 30px;
+      right: 36px;
     }
   }
 

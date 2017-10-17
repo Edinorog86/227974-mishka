@@ -13,7 +13,7 @@
   top: 50%;
   left: 50%;
   background-color: #ffffff;
-  box-shadow: 0 20px 30px -10px rgba(0,0,0,0.3);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.3);
   transform: translate(-50%, -50%);
   z-index: 100;
 }
@@ -54,8 +54,8 @@
   .modal-cart__action-call {
     font-size: 17px;
     line-height: 30px;
-    margin:0;
-    margin-top: 0px;
+    margin: 0;
+    margin-top: 0;
     margin-bottom: 22px;
   }
 
@@ -67,4 +67,3 @@
     font-weight: bold;
   }
 }
-

@@ -164,6 +164,8 @@
 
   .catalog-goods__discription {
     flex-basis: auto;
+    min-height: 195px;
+    justify-content: space-between;
     padding: 0 28px;
   }
 

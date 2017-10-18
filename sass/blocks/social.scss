@@ -10,17 +10,35 @@
   &__item--instagram {
     margin-left: 50px;
     margin-right: 28px;
-    background: url("../img/icon-insta.svg") no-repeat center center;
+  }
+
+  &__item--instagram svg,
+  &__item--facebook svg,
+  &__item--twitter svg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__item--instagram svg:hover,
+  &__item--facebook svg:hover,
+  &__item--twitter svg:hover {
+    fill: $main-color;
+  }
+
+  &__item--instagram svg:active,
+  &__item--facebook svg:active,
+  &__item--twitter svg:active {
+    opacity: 0.3;
   }
 
   &__item--facebook {
     margin-right: 26px;
-    background: url("../img/icon-fb.svg") no-repeat center center;
   }
 
   &__item--twitter {
     margin-right: 62px;
-    background: url("../img/icon-twitter.svg") no-repeat center center;
   }
 }
 
@@ -50,6 +68,7 @@
 
     &__item--twitter {
       margin-right: 0;
+      padding-right: 5px;
     }
   }
 }

@@ -35,15 +35,38 @@
   }
 }
 
-.nav__item--search a::after {
-  @include pseudo-element(22px, 22px, 32px, 32px);
-  background: url("../img/icon-search.svg") no-repeat center center;
+.nav__item--search svg {
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 34px;
+  left: 30px;
 }
 
-.nav__item--cart a::after {
-  @include pseudo-element(22px, 22px, 32px, 32px);
-  background: url("../img/icon-cart.svg") no-repeat center center;
+.nav__item--cart svg {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 32px;
+  left: 28px;
 }
+
+.nav__item--cart:active {
+  opacity: 0.3;
+}
+
+.nav__item--search:active a {
+  opacity: 0.3;
+}
+
+.nav__item--cart:hover svg {
+  fill: $main-color;
+}
+
+.nav__item--search:hover svg {
+  fill: $main-color;
+}
+
 
 .nav__toggle {
   position: absolute;

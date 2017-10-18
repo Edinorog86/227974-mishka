@@ -3,18 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header page-header--nojs">
       <div class="page-header__wrapper container">
         <a class="page-header__logo" href="#">
-          <picture>
-            <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img src="img/logo-mobile.svg" alt="Лого-мишка">
-          </picture>
+          <svg class="page-header__logo-mobile" width="100%" height="100%">
+            <use xlink:href="#logo-mobile"></use>
+          </svg>
+          <svg class="page-header__logo-tablet" width="100%" height="100%">
+            <use xlink:href="#logo-tablet"></use>
+          </svg>
+          <svg class="page-header__logo-desktop" width="100%" height="100%">
+            <use xlink:href="#logo-desktop"></use>
+          </svg>
         </a>
         <div class="page-header__menu nav nav--nojs">
           <button class="nav__toggle nav__toggle--closed" type="button">Открыть меню</button>
@@ -30,10 +37,18 @@
         <div class="page-header__user-area nav nav--nojs">
           <ul class="nav__list nav__list--closed">
             <li class="page-header__item nav__item nav__item--search">
-              <a href="#">Поиск по сайту</a>
+              <a href="#">Поиск по сайту
+                <svg class="nav__icon-search" width="20" height="20">
+                  <use xlink:href="#icon-search"></use>
+                </svg>
+              </a>
             </li>
             <li class="page-header__item nav__item nav__item--cart">
-              <a href="#">Корзина: пока пуста</a>
+              <a href="#">Корзина: пока пуста
+                <svg class="nav__icon-cart" width="20" height="20">
+                  <use xlink:href="#icon-cart"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -57,9 +72,15 @@
           <div class="products__categories">
             <a href="#" class="products__interior">
               <p>Предметы интерьера</p>
+              <svg width="40" height="62">
+                <use xlink:href="#icon-interior"></use>
+              </svg>
             </a>
             <a href="#" class="products__toys">
               <p>Детские игрушки</p>
+              <svg width="60" height="60">
+                <use xlink:href="#icon-toy"></use>
+              </svg>
             </a>
           </div>
         </div>
@@ -91,9 +112,12 @@
             </table>
           </div>
           <picture>
+            <source type="image/webp" media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/triple-set-mobile@1x.webp 1x, img/triple-set-mobile@2x.webp 2x">
             <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
-            <img class="weekly-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Картинка товара" wdith="260" height="315">
+            <img class="weekly-product__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Картинка товара">
           </picture>
           <div class="weekly-product__order">
             <p class="weekly-product__price">Цена: 990 руб.</p>
@@ -105,12 +129,42 @@
         <div class="container">
           <h3 class="about__title">Коротко о нас:</h3>
           <ul class="about__list">
-            <li class="about__item about__item--clean"><p>Экологически чистые материалы</p></li>
-            <li class="about__item about__item--cheap"><p>Скандинавский стиль по российской цене</p></li>
-            <li class="about__item about__item--popular"><p>Увеличивает лайки на фотографиях</p></li>
-            <li class="about__item about__item--cute"><p>Связано вручную с любовью и умилением</p></li>
-            <li class="about__item about__item--patriotic"><p>Поддержка отечественного производителя</p></li>
-            <li class="about__item about__item--gift"><p>Поставляется в подарочной упаковке</p></li>
+            <li class="about__item about__item--clean">
+              <svg width="32" height="37" class="flower-icon">
+                <use xlink:href="#icon-feature-flower"></use>
+              </svg>
+              <p>Экологически чистые материалы</p>
+            </li>
+            <li class="about__item about__item--cheap">
+                <svg width="48" height="28">
+                  <use xlink:href="#icon-feature-money"></use>
+                </svg>
+              <p>Скандинавский стиль по российской цене</p>
+            </li>
+            <li class="about__item about__item--popular">
+              <svg width="34" height="27">
+                <use xlink:href="#icon-feature-heart"></use>
+              </svg>
+              <p>Увеличивает лайки на фотографиях</p>
+            </li>
+            <li class="about__item about__item--cute">
+              <svg width="36" height="34">
+                <use xlink:href="#icon-feature-ball"></use>
+              </svg>
+              <p>Связано вручную с любовью и умилением</p>
+            </li>
+            <li class="about__item about__item--patriotic">
+              <svg width="56" height="25">
+                <use xlink:href="#icon-feature-rocket"></use>
+              </svg>
+              <p>Поддержка отечественного производителя</p>
+            </li>
+            <li class="about__item about__item--gift">
+              <svg width="34" height="33">
+                <use xlink:href="#icon-feature-gift"></use>
+              </svg>
+              <p>Поставляется в подарочной упаковке</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -128,8 +182,18 @@
             </blockquote>
           </div>
           <div class="comments__actions">
-            <button class="comments__left" type="button">Предыдущий</button>
-            <button class="comments__right" type="button">Следующий</button>
+            <button class="comments__left" type="button">
+              <svg width="50" height="26">
+                <use xlink:href="#icon-left-arrow"></use>
+              </svg>
+              Предыдущий
+            </button>
+            <button class="comments__right" type="button">
+              <svg width="50" height="26">
+                <use xlink:href="#icon-right-arrow"></use>
+              </svg>
+              Следующий
+            </button>
           </div>
           <a href="#" class="comments__button button">Написать</a>
         </div>
@@ -137,7 +201,11 @@
       <section class="contacts">
         <div class="contacts__wrapper">
           <div class="contacts__text">
-            <h3 class="contacts__title">Контакты</h3>
+            <h3 class="contacts__title">Контакты
+              <svg width="51" height="87">
+                <use xlink:href="#icon-flag"></use>
+              </svg>
+            </h3>
             <div class="contacts__email">
               <p class="contacts__legend">e-mail:</p>
               <a href="#" class="contacts__email-data">info@mimimishkashop.ru</a>
@@ -148,7 +216,7 @@
             </div>
           </div>
           <div class="contacts__map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2sBolshaya+Konyushennaya+ul.%2C+19%2C+101%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1506859806364" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xfbeb3cbd3eed50c8!2sBolshaya+Konyushennaya+ul.%2C+19%2C+101%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1506859806364" style="border:0" allowfullscreen></iframe>
           </div>
           <div class="contacts__actions">
             <a href="#" class="contacts__button button">Напишите нам</a>
@@ -159,20 +227,33 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
         <a href="#" class="page-footer__logo">
-          <img src="img/logo-footer.svg" alt="Лого-мишка">
+          <svg width="103" height="34">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
         </a>
         <div class="social">
-          <a href="#" class="social__item social__item--instagram">Instagram</a>
-          <a href="#" class="social__item social__item--facebook">Facebook</a>
-          <a href="#" class="social__item social__item--twitter">Twitter</a>
+          <a href="#" class="social__item social__item--instagram">Instagram
+            <svg width="22" height="21"><use xlink:href="#icon-insta"></use></svg>
+          </a>
+          <a href="#" class="social__item social__item--facebook">Facebook
+            <svg width="15" height="28"><use xlink:href="#icon-fb"></use></svg>
+          </a>
+          <a href="#" class="social__item social__item--twitter">Twitter
+            <svg width="24" height="20"><use xlink:href="#icon-twitter"></use></svg>
+          </a>
         </div>
         <div class="credits">
           <h3 class="credits__title">Разработано</h3>
-          <a href="#" class="credits__link">HTML Academy</a>
+          <a href="#" class="credits__link">
+            HTML Academy
+            <svg width="35" height="35">
+              <use xlink:href="#logo-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
-    <div class="modal-cart">
+    <div class="modal-cart modal-cart--hidden">
       <h2 class="modal-cart__title">Добавить в корзину</h2>
       <p class="modal-cart__action-call">Выберите размер</p>
       <div class="modal-cart__sizes choose-size">
@@ -181,6 +262,9 @@
         <a href="#" class="choose-size__item">L</a>
       </div>
       <button class="modal-cart__button button button--green" type="button">Добавить</button>
+    </div>
+    <div class="modal-background modal-background--hidden">
+      Фон
     </div>
     <script src="js/main.js"></script>
     <script src="js/picturefill.js"></script>

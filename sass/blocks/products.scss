@@ -59,9 +59,10 @@
   position: relative;
   background: #63d1bb;
 
-  &::after {
-    @include pseudo-element-right(62px, 70px, 17px, 24px);
-    background: url("../img/icon-interior.svg") no-repeat center center;
+  svg {
+    position: absolute;
+    top: 24px;
+    right: 35px;
     opacity: 0.5;
   }
 }
@@ -70,9 +71,10 @@
   position: relative;
   background: #56c3b2;
 
-  &::after {
-    @include pseudo-element-right(62px, 70px, 17px, 24px);
-    background: url("../img/icon-toy.svg") no-repeat center center;
+  svg {
+    position: absolute;
+    top: 23px;
+    right: 28px;
     opacity: 0.5;
   }
 }
@@ -95,26 +97,26 @@
   .products__toys {
     transition: transform 0.2s ease;
 
-    &::after {
-      top: 25px;
-      right: 30px;
-    }
-
     &:hover {
       transform: translateY(-5px);
+    }
+
+    svg {
+      top: 29px;
+      right: 35px;
     }
   }
 
   .products__interior {
     transition: transform 0.2s ease;
 
-    &::after {
-      top: 25px;
-      right: 25px;
-    }
-
     &:hover {
       transform: translateY(-5px);
+    }
+
+    svg {
+      top: 30px;
+      right: 36px;
     }
   }
 

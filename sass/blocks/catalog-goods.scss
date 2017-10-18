@@ -73,7 +73,14 @@
   font-size: 0;
   width: 22px;
   height: 24px;
-  background: url("../img/icon-cart.svg") no-repeat center center;
+}
+
+.catalog-goods__add-to-cart svg:hover {
+  fill: $main-color;
+}
+
+.catalog-goods__add-to-cart svg:active {
+  opacity: 0.3;
 }
 
 .catalog-goods__item {
@@ -156,6 +163,9 @@
   }
 
   .catalog-goods__discription {
+    flex-basis: auto;
+    min-height: 195px;
+    justify-content: space-between;
     padding: 0 28px;
   }
 

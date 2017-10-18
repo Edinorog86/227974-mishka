@@ -2,18 +2,25 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header page-header--nojs">
     <div class="page-header__wrapper container">
       <a class="page-header__logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="Лого-мишка">
-        </picture>
+        <svg class="page-header__logo-mobile" width="100%" height="100%">
+          <use xlink:href="#logo-mobile"></use>
+        </svg>
+        <svg class="page-header__logo-tablet" width="100%" height="100%">
+          <use xlink:href="#logo-tablet"></use>
+        </svg>
+        <svg class="page-header__logo-desktop" width="100%" height="100%">
+          <use xlink:href="#logo-desktop"></use>
+        </svg>
       </a>
       <div class="page-header__menu nav nav--nojs">
         <button class="nav__toggle nav__toggle--closed" type="button">Открыть меню</button>
@@ -29,10 +36,18 @@
       <div class="page-header__user-area nav nav--nojs">
         <ul class="nav__list nav__list--closed">
           <li class="page-header__item nav__item nav__item--search">
-            <a href="#">Поиск по сайту</a>
+            <a href="#">Поиск по сайту
+              <svg class="nav__icon-search" width="20" height="20">
+                <use xlink:href="#icon-search"></use>
+              </svg>
+            </a>
           </li>
           <li class="page-header__item nav__item nav__item--cart">
-            <a href="#">Корзина: пока пуста</a>
+            <a href="#">Корзина: пока пуста
+              <svg class="nav__icon-cart" width="20" height="20">
+                <use xlink:href="#icon-cart"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -64,9 +79,7 @@
       <form class="order-form" action="https://echo.htmlacademy.ru" method="GET">
         <fieldset class="order-form__type form-field">
           <div class="order-form__wrapper container">
-            <div class="order-form__title">
-              <legend>Тип</legend>
-            </div>
+            <div class="order-form__title">Тип</div>
             <div class="order-form__inputs">
               <input id="order-form__accessories" type="radio" name="toys" checked>
               <label for="order-form__accessories" class="form-field__label">Аксессуар для интерьера</label>
@@ -77,9 +90,7 @@
         </fieldset>
         <fieldset class="order-form__color form-field">
           <div class="order-form__wrapper container">
-            <div class="order-form__title">
-              <legend>Цвет</legend>
-            </div>
+            <div class="order-form__title">Цвет</div>
             <div class="order-form__inputs">
               <input id="order-form__white" type="checkbox" name="color-white" checked>
               <label for="order-form__white" class="form-field__label">Белый</label>
@@ -98,9 +109,7 @@
         </fieldset>
         <fieldset class="order-form__bio form-field">
           <div class="order-form__wrapper container">
-            <div class="order-form__title">
-              <legend>Фио</legend>
-            </div>
+            <div class="order-form__title">Фио</div>
             <div class="order-form__inputs">
               <label for="order-form__name" class="form-field__label">
                 Имя:
@@ -122,10 +131,12 @@
             <div class="order-form__wrapper">
               <label for="order-form__phone" class="order-form__title">Тел</label>
               <input id="order-form__phone" class="order-form__phone order-form__text-input" type="tel" name="phone-number" placeholder="+7 ХХХ ХХ ХХ*" required>
+              <svg class="order-form__phone-icon" width="25" height="25"><use xlink:href="#icon-phone"></use></svg>
             </div>
             <div class="order-form__wrapper">
               <label for="order-form__email" class="order-form__title">E-mail</label>
               <input id="order-form__email" class="order-form__email order-form__text-input" type="email" name="email" placeholder="Ваш Email*" required>
+              <svg class="order-form__email-icon" width="32" height="32"><use xlink:href="#icon-mail"></use></svg>
             </div>
           </div>
         </div>
@@ -143,16 +154,28 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper container">
       <a href="#" class="page-footer__logo">
-        <img src="img/logo-footer.svg" alt="Лого-мишка">
+        <svg width="103" height="34">
+          <use xlink:href="#logo-footer"></use>
+        </svg>
       </a>
       <div class="social">
-        <a href="#" class="social__item social__item--instagram">Instagram</a>
-        <a href="#" class="social__item social__item--facebook">Facebook</a>
-        <a href="#" class="social__item social__item--twitter">Twitter</a>
+        <a href="#" class="social__item social__item--instagram">Instagram
+          <svg width="22" height="21"><use xlink:href="#icon-insta"></use></svg>
+        </a>
+        <a href="#" class="social__item social__item--facebook">Facebook
+          <svg width="15" height="28"><use xlink:href="#icon-fb"></use></svg>
+        </a>
+        <a href="#" class="social__item social__item--twitter">Twitter
+          <svg width="24" height="20"><use xlink:href="#icon-twitter"></use></svg>
+        </a>
       </div>
       <div class="credits">
         <h3 class="credits__title">Разработано</h3>
-        <a href="#" class="credits__link">HTML Academy</a>
+        <a href="#" class="credits__link">HTML Academy
+          <svg width="35" height="35">
+            <use xlink:href="#logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

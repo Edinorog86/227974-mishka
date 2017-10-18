@@ -80,7 +80,10 @@ gulp.task("serve", function() {
 gulp.task("copy", function() {
   return gulp.src([
     "fonts/**/*.{woff,woff2}",
-    "img/**",
+    "img/**/*.{jpg,webp}",
+    "img/sprite.svg",
+    "img/bg-*.svg",
+    "img/icon-tick.svg",
     "js/**"
   ], {
     base: "."

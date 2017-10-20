@@ -4,6 +4,11 @@
   width: 100%;
   background-color: #ffffff;
   z-index: 1;
+
+  &--nojs {
+    display: block;
+    position: static;
+  }
 }
 
 .nav__list {
@@ -20,8 +25,8 @@
   }
 }
 
-.nav__nojs .nav__list {
-  display: block;
+.nav--nojs .nav__list {
+  display: flex;
 }
 
 .nav__item {

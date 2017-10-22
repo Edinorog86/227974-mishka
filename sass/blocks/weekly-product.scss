@@ -1,12 +1,9 @@
-.weekly-product {
-  background: url("../img/bg-zigzag-line.svg") repeat-x bottom  left 15px;
-  background-size: 300px;
-}
-
 .weekly-product__wrapper {
   box-sizing: border-box;
   padding-top: 28px;
   padding-bottom: 43px;
+  background: url("../img/bg-zigzag-line.svg") repeat-x bottom left 15px;
+  background-size: 300px;
 }
 
 .weekly-product__name {
@@ -109,6 +106,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-content: flex-start;
+    background-size: auto;
   }
 
   .weekly-product__info {
@@ -139,6 +137,12 @@
 @media (min-width: 1150px) {
   .weekly-product {
     background-size: 1100px;
+  }
+
+  .weekly-product .container {
+    width: 1050px;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .weekly-product__wrapper {

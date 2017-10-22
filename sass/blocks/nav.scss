@@ -1,6 +1,5 @@
 .nav {
   position: absolute;
-  min-width: 320px;
   width: 100%;
   background-color: #ffffff;
   z-index: 1;
@@ -169,6 +168,13 @@
 
   .nav__list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1150px) {
+  .nav {
+    max-width: 376px;
   }
 }

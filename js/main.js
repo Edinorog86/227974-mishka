@@ -4,9 +4,9 @@ var navs = document.querySelectorAll('.nav');
 var toggle = document.querySelector('.nav__toggle');
 var navLists = document.querySelectorAll('.nav__list');
 
-header.classList.remove("page-header--nojs");
+header.classList.remove('page-header--nojs');
 for ( var i = 0; i < navs.length; i++) {
-  navs[i].classList.remove("nav--nojs");
+  navs[i].classList.remove('nav--nojs');
 }
 
 toggle.addEventListener('click', function() {

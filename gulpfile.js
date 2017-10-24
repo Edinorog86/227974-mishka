@@ -108,5 +108,5 @@ gulp.task('clean', function() {
 })
 
 gulp.task('build', function(done) {
-  run('clean', 'copy', 'style','uglify', 'sprite', 'html', done);
+  run('clean', 'copy', 'style', 'uglify', 'sprite', 'html', done);
 })

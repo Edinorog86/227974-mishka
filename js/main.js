@@ -7,7 +7,7 @@ var navLists = document.querySelectorAll('.nav__list');
 header.classList.remove('page-header--nojs');
 for ( var i = 0; i < navs.length; i++) {
   navs[i].classList.remove('nav--nojs');
-}
+};
 
 toggle.addEventListener('click', function() {
   if(toggle.classList.contains('nav__toggle--opened')) {
@@ -25,4 +25,4 @@ toggle.addEventListener('click', function() {
       navLists[i].classList.add('nav__list--opened');
     }
   }
-})
+});

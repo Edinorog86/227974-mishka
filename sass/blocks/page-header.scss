@@ -1,6 +1,6 @@
 
 .page-header {
-  height: 78px;
+  // height: 78px;
   border-bottom: 1px solid #ececec;
   border-top: 1px solid #ececec;
   font-weight: bold;
@@ -152,7 +152,12 @@
   }
 
   .page-header {
-    height: 88px;
+    // height: 88px;
+  }
+
+  .page-header__menu,
+  .page-header__delivery-info {
+    margin-bottom: -60px;
   }
 
   .page-header__menu,
@@ -203,6 +208,7 @@
   }
 
   .page-header__menu {
+    margin-bottom: 0;
     order: -1;
 
     a {
@@ -219,5 +225,10 @@
     .page-header__item:last-child {
       padding-left: 35px;
     }
+  }
+
+  .page-header__offers,
+  .page-header__delivery-info {
+    margin-bottom: -60px;
   }
 }
